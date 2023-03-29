@@ -57,4 +57,27 @@ public class Funcionario extends PessoaFisica {
         this.senha = senha;
         this.dataContratacao = dataContratacao;
     }
+
+    @Override
+    public String toString() {
+        return "Funcionario [" +
+        "codigoPessoa=" + codigoPessoa +
+        ", nome=" + nome +
+        ", email=" + email +
+        ", site=" + site +
+        ", dataInclusao=" + dataInclusao +
+        ", cpf=" + cpf +
+        ", rg=" + rg +
+        ", sexo=" + sexo +
+        ", raca=" + raca +
+        ", nacionalidade=" + nacionalidade +
+        ", naturalidade=" + naturalidade +
+        ", nomePai=" + nomePai +
+        ", nomeMae=" + nomeMae + 
+        ", matricula=" + matricula +
+        ", login=" + login +
+        ", senha=" + senha +
+        ", dataContratacao=" + dataContratacao + 
+        "]";
+    }
 }

@@ -4,13 +4,9 @@ import java.time.LocalDate;
 import java.util.List;
 
 public class Categoria {
-
     private int codigo;
-
     private String descricao;
-
     private LocalDate dataDeInclusao;
-
     private List<Subcategoria> subcategorias;
 
     public int getCodigo() {

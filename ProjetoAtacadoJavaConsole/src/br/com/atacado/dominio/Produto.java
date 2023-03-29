@@ -3,15 +3,10 @@ package br.com.atacado.dominio;
 import java.time.LocalDate;
 
 public class Produto {
-
     private int codigo;
-
     private int codigoSubcategoria;
-
     private String descricao;
-
     private double valor;
-
     private LocalDate dataDeInclusao;
 
     public int getCodigo() {

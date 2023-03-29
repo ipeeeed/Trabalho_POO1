@@ -3,14 +3,10 @@ package br.com.atacado.dominio;
 import java.time.LocalDate;
 
 public class PessoaJuridica extends BasePessoa {
-
-    private String cnpj;
-
-    private String inscricaoEstadual;
-
-    private String inscricaoMunicipal;
-
-    private String nomeFantasia;
+    protected String cnpj;
+    protected String inscricaoEstadual;
+    protected String inscricaoMunicipal;
+    protected String nomeFantasia;
 
     public String getCnpj() {
         return cnpj;
@@ -81,5 +77,4 @@ public class PessoaJuridica extends BasePessoa {
                 ", nomeFantasia=" + nomeFantasia +
                 "]";
     }
-
 }

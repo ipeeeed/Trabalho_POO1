@@ -3,14 +3,14 @@ package br.com.atacado.dominio;
 import java.time.LocalDate;
 
 public class PessoaFisica extends BasePessoa {
-    private String cpf;
-    private String rg;
-    private String sexo;
-    private String raca;
-    private String nacionalidade;
-    private String naturalidade;
-    private String nomePai;
-    private String nomeMae;
+    protected String cpf;
+    protected String rg;
+    protected String sexo;
+    protected String raca;
+    protected String nacionalidade;
+    protected String naturalidade;
+    protected String nomePai;
+    protected String nomeMae;
 
     public String getCpf() {
         return cpf;
@@ -126,5 +126,4 @@ public class PessoaFisica extends BasePessoa {
                 ", nomeMae=" + nomeMae
                 + "]";
     }
-
 }

@@ -52,5 +52,4 @@ public abstract class BaseTransporte {
         this.descricao = descricao;
         this.dataInsert = dataInsert;
     }
-
 }
