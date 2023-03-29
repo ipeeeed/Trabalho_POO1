@@ -1,11 +1,10 @@
 package br.com.atacado.trabalhoA1;
 
 import java.time.LocalDate;
-import java.util.ArrayList;
 import java.util.List;
 
 public class Frota extends BaseTransporte {
-    private List<Veiculo> veiculos = new ArrayList<>();
+    private List<Veiculo> veiculos;
 
     public List<Veiculo> getVeiculos() {
         return veiculos;

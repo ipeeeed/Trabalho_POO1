@@ -1,14 +1,13 @@
 package br.com.atacado.trabalhoA1;
 
 import java.time.LocalDate;
-import java.util.ArrayList;
 import java.util.List;
 
 public abstract class BaseTransporte {
     protected int codigo;
     protected String descricao;
     protected LocalDate dataInsert;
-    protected List<Frota> frota = new ArrayList<>();
+    protected List<Frota> frota;
 
     public int getCodigo() {
         return codigo;
