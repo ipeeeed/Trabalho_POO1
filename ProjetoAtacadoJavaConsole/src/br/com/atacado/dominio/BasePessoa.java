@@ -3,6 +3,7 @@ package br.com.atacado.dominio;
 import java.time.LocalDate;
 
 public abstract class BasePessoa {
+
     protected int codigoPessoa;
     protected String nome;
     protected String email;
@@ -58,4 +59,5 @@ public abstract class BasePessoa {
     }
 
     public abstract void Imprimir();
+
 }

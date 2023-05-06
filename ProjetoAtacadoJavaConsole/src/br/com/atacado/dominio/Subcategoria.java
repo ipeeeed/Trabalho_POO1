@@ -42,11 +42,11 @@ public class Subcategoria {
         this.dataDeInclusao = dataDeInclusao;
     }
 
-    public List<Produto> getProdutos() {
+    public List<Produto> getProduto() {
         return produtos;
     }
 
-    public void setProdutos(List<Produto> produtos) {
+    public void setProduto(List<Produto> produtos) {
         this.produtos = produtos;
     }
 
@@ -59,4 +59,11 @@ public class Subcategoria {
         this.descricao = descricao;
         this.dataDeInclusao = dataDeInclusao;
     }
+
+    @Override
+    public String toString() {
+        return "Subcategoria [codigo=" + codigo + ", codigoCategoria=" + codigoCategoria + ", descricao=" + descricao
+                + ", dataDeInclusao=" + dataDeInclusao + "]";
+    }
+
 }
