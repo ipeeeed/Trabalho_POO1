@@ -1,5 +1,7 @@
 package br.com.atacado.repositorio;
 
+import java.util.List;
+
 public interface IBaseRepositorio<TTipo> {
     TTipo Create(TTipo obj);
 

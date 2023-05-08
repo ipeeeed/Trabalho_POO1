@@ -25,11 +25,11 @@ public class App {
 
                 prods1.add(p1);
                 prods1.add(p2);
-                s1.setProdutos(prods1);
+                s1.setProduto(prods1);
 
                 prods2.add(p3);
                 prods2.add(p4);
-                s2.setProdutos(prods2);
+                s2.setProduto(prods2);
 
                 List<Subcategoria> subs = new ArrayList<>();
 

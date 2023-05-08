@@ -1,5 +1,7 @@
 package br.com.atacado.repositorio;
 
+import java.util.List;
+
 import br.com.atacado.dominio.Categoria;
 
 public class CategoriaRepositorio implements IBaseRepositorio<Categoria> {
