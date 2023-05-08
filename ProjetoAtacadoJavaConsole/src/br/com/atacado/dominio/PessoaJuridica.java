@@ -51,19 +51,16 @@ public class PessoaJuridica extends BasePessoa {
 
     @Override
     public void Imprimir() {
-
-        System.out.println("PESSOA JURIDICA");
-        System.out.println("=========================================================================");
-        System.out.println("Codigo da pessoa PJ : " + this.codigoPessoa);
-        System.out.println("Nome PJ : " + this.nome);
-        System.out.println("Email : " + this.email);
-        System.out.println("Site : " + this.site);
-        System.out.println("Data da inclusão : " + this.dataInclusao);
-        System.out.println("CNPJ : " + this.cnpj);
-        System.out.println("Inscrição estadual : " + this.inscricaoEstadual);
-        System.out.println("Inscrição municipal : " + this.inscricaoMunicipal);
-        System.out.println("Nome Fantasia : " + this.nomeFantasia);
-        System.out.println("=========================================================================");
+        System.out.println("-- Detalhes da Pessoa Jurídica --");
+        System.out.println("Código da Pessoa: " + this.codigoPessoa);
+        System.out.println("Nome: " + this.nome);
+        System.out.println("E-mail: " + this.email);
+        System.out.println("Site: " + this.site);
+        System.out.println("Data de Inclusão: " + this.dataInclusao);
+        System.out.println("CNPJ: " + this.cnpj);
+        System.out.println("Inscrição Estadual: " + this.inscricaoEstadual);
+        System.out.println("Inscrição Municipal: " + this.inscricaoMunicipal);
+        System.out.println("Nome Fantasia: " + this.nomeFantasia);
     }
 
     @Override
@@ -77,6 +74,7 @@ public class PessoaJuridica extends BasePessoa {
                 ", cnpj=" + cnpj +
                 ", inscricaoEstadual=" + inscricaoEstadual +
                 ", inscricaoMunicipal=" + inscricaoMunicipal +
-                ", nomeFantasia=" + nomeFantasia + "]";
+                ", nomeFantasia=" + nomeFantasia +
+                "]";
     }
 }

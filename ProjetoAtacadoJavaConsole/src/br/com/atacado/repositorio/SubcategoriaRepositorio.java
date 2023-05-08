@@ -1,16 +1,16 @@
 package br.com.atacado.repositorio;
 
-import br.com.atacado.dominio.Categoria;
-import br.com.atacado.fakeDB.CategoriaFakeDB;
+import br.com.atacado.dominio.Subcategoria;
+import br.com.atacado.fakeDB.SubcategoriaFakeDB;
 
-public class CategoriaRepositorio extends BaseRepositorio<Categoria> {
+public class SubcategoriaRepositorio extends BaseRepositorio<Subcategoria> {
 
-    public CategoriaRepositorio() {
-        this.tabela = new CategoriaFakeDB().getTabela();
+    public SubcategoriaRepositorio() {
+        this.tabela = new SubcategoriaFakeDB().getTabela();
     }
 
     @Override
-    public Categoria Create(Categoria obj) {
+    public Subcategoria Create(Subcategoria obj) {
         int chave = 0;
         if (this.tabela.size() == 0) {
             chave++;
@@ -24,9 +24,9 @@ public class CategoriaRepositorio extends BaseRepositorio<Categoria> {
     }
 
     @Override
-    public Categoria Read(int chave) {
-        Categoria res = new Categoria();
-        for (Categoria tupla : this.tabela) {
+    public Subcategoria Read(int chave) {
+        Subcategoria res = new Subcategoria();
+        for (Subcategoria tupla : tabela) {
             if (tupla.getCodigo() == chave) {
                 res = tupla;
                 break;
@@ -38,11 +38,12 @@ public class CategoriaRepositorio extends BaseRepositorio<Categoria> {
     }
 
     @Override
-    public Categoria Update(Categoria obj) {
-        Categoria alteracao = this.Read(obj.getCodigo());
+    public Subcategoria Update(Subcategoria obj) {
+        Subcategoria alteracao = this.Read(obj.getCodigo());
         if (alteracao != null) {
             alteracao.setDescricao(obj.getDescricao());
         }
         return alteracao;
     }
+
 }

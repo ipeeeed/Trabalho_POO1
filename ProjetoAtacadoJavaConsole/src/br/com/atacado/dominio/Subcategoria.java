@@ -4,10 +4,15 @@ import java.time.LocalDate;
 import java.util.List;
 
 public class Subcategoria {
+
     private int codigo;
+
     private int codigoCategoria;
+
     private String descricao;
+
     private LocalDate dataDeInclusao;
+
     private List<Produto> produtos;
 
     public int getCodigo() {
@@ -42,11 +47,11 @@ public class Subcategoria {
         this.dataDeInclusao = dataDeInclusao;
     }
 
-    public List<Produto> getProduto() {
+    public List<Produto> getProdutos() {
         return produtos;
     }
 
-    public void setProduto(List<Produto> produtos) {
+    public void setProdutos(List<Produto> produtos) {
         this.produtos = produtos;
     }
 
@@ -54,6 +59,13 @@ public class Subcategoria {
     }
 
     public Subcategoria(int codigo, int codigoCategoria, String descricao, LocalDate dataDeInclusao) {
+        this.codigo = codigo;
+        this.codigoCategoria = codigoCategoria;
+        this.descricao = descricao;
+        this.dataDeInclusao = dataDeInclusao;
+    }
+
+    public Subcategoria(int codigo, String descricao, LocalDate dataDeInclusao, int codigoCategoria) {
         this.codigo = codigo;
         this.codigoCategoria = codigoCategoria;
         this.descricao = descricao;

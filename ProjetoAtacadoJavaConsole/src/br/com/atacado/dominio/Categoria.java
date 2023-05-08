@@ -53,6 +53,5 @@ public class Categoria {
     @Override
     public String toString() {
         return "Categoria [codigo=" + codigo + ", descricao=" + descricao + ", dataDeInclusao=" + dataDeInclusao + "]";
-    };
-
+    }
 }

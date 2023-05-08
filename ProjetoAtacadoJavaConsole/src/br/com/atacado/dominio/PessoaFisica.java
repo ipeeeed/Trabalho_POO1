@@ -3,7 +3,6 @@ package br.com.atacado.dominio;
 import java.time.LocalDate;
 
 public class PessoaFisica extends BasePessoa {
-
     protected String cpf;
     protected String rg;
     protected String sexo;
@@ -93,27 +92,20 @@ public class PessoaFisica extends BasePessoa {
 
     @Override
     public void Imprimir() {
-
-        System.out.println("=========================================================================");
-        System.out.println("PESSOA FISICA");
-        System.out.println("=========================================================================");
-        System.out.println("");
-        System.out.println("Codigo da pessoa: " + this.codigoPessoa);
-        System.out.println("Nome da pessoa: " + this.nome);
-        System.out.println("Email: " + this.email);
+        System.out.println("-- Detalhes da Pessoa Física --");
+        System.out.println("Código da Pessoa: " + this.codigoPessoa);
+        System.out.println("Nome: " + this.nome);
+        System.out.println("E-mail: " + this.email);
         System.out.println("Site: " + this.site);
-        System.out.println("Data de inclusão: " + this.dataInclusao);
-        System.out.println("Cpf: " + this.cpf);
-        System.out.println("Rg: " + this.rg);
+        System.out.println("Data de Inclusão: " + this.dataInclusao);
+        System.out.println("CPF: " + this.cpf);
+        System.out.println("RG: " + this.rg);
         System.out.println("Sexo: " + this.sexo);
         System.out.println("Raça: " + this.raca);
         System.out.println("Nacionalidade: " + this.nacionalidade);
         System.out.println("Naturalidade: " + this.naturalidade);
-        System.out.println("Nome do pai: " + this.nomePai);
-        System.out.println("Nome da mãe: " + this.nomeMae);
-        System.out.println("");
-        System.out.println("=========================================================================");
-
+        System.out.println("Nome do Pai: " + this.nomePai);
+        System.out.println("Nome da Mãe: " + this.nomeMae);
     }
 
     @Override
@@ -131,6 +123,7 @@ public class PessoaFisica extends BasePessoa {
                 ", nacionalidade=" + nacionalidade +
                 ", naturalidade=" + naturalidade +
                 ", nomePai=" + nomePai +
-                ", nomeMae=" + nomeMae + "]";
+                ", nomeMae=" + nomeMae
+                + "]";
     }
 }

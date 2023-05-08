@@ -8,7 +8,7 @@ public abstract class BaseFakeDB<T> {
     protected List<T> tabela;
 
     public List<T> getTabela() {
-        // singletom
+        // singleton
         if (this.tabela == null) {
             this.tabela = new ArrayList<T>();
             this.AutoFill();

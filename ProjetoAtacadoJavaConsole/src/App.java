@@ -1,41 +1,17 @@
-import java.time.LocalDate;
-import java.util.ArrayList;
-import java.util.List;
-
-import br.com.atacado.dominio.*;
+import br.com.atacado.teste.TesteCategoriaRepositorio;
+import br.com.atacado.teste.TesteSubcategoriaRepositorio;
+import br.com.atacado.teste.TesteProdutoRepositorio;
 
 public class App {
-        public static void main(String[] args) throws Exception {
-                Categoria c1 = new Categoria(1, "Laticinios", LocalDate.now());
 
-                Subcategoria s1 = new Subcategoria(1, 1, "Queijos", LocalDate.now());
+    public static void main(String[] args) throws Exception {
+        TesteCategoriaRepositorio teste1 = new TesteCategoriaRepositorio();
+        teste1.Executar();
 
-                Subcategoria s2 = new Subcategoria(2, 1, "Iogurte", LocalDate.now());
-
-                Produto p1 = new Produto(1, 1, "Mussarela", 45.5, LocalDate.now());
-
-                Produto p2 = new Produto(2, 1, "Provolone", 50.75, LocalDate.now());
-
-                Produto p3 = new Produto(3, 2, "Grego", 7.25, LocalDate.now());
-
-                Produto p4 = new Produto(4, 2, "Natural", 5.45, LocalDate.now());
-
-                List<Produto> prods1 = new ArrayList<>();
-                List<Produto> prods2 = new ArrayList<>();
-
-                prods1.add(p1);
-                prods1.add(p2);
-                s1.setProduto(prods1);
-
-                prods2.add(p3);
-                prods2.add(p4);
-                s2.setProduto(prods2);
-
-                List<Subcategoria> subs = new ArrayList<>();
-
-                subs.add(s1);
-                subs.add(s2);
-
-                c1.setSubcategorias(subs);
-        }
+        TesteSubcategoriaRepositorio teste2 = new TesteSubcategoriaRepositorio();
+        teste2.Executar();
+        
+        TesteProdutoRepositorio teste3 = new TesteProdutoRepositorio();
+        teste3.Executar();
+    }
 }
