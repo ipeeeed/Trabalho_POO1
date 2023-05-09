@@ -49,6 +49,9 @@ public abstract class BasePessoa {
         this.dataInclusao = dataInclusao;
     }
 
+    public BasePessoa() {
+    }
+
     public BasePessoa(int codigoPessoa, String nome, String email, String site, LocalDate dataInclusao) {
         this.codigoPessoa = codigoPessoa;
         this.nome = nome;

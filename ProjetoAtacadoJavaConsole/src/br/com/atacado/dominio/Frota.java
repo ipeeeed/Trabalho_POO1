@@ -1,4 +1,4 @@
-package br.com.atacado.trabalhoA1;
+package br.com.atacado.dominio;
 
 import java.time.LocalDate;
 import java.util.List;

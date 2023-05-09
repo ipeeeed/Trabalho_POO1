@@ -1,4 +1,4 @@
-package br.com.atacado.trabalhoA1;
+package br.com.atacado.dominio;
 
 import java.time.LocalDate;
 
@@ -32,7 +32,6 @@ public abstract class BaseTransporte {
     }
 
     public BaseTransporte() {
-        super();
     }
 
     public BaseTransporte(int codigo, String descricao, LocalDate dataInsert) {
