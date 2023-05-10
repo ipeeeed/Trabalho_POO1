@@ -4,8 +4,7 @@ import java.util.List;
 import br.com.atacado.dominio.Subcategoria;
 import br.com.atacado.repositorio.SubcategoriaRepositorio;
 
-public class TesteSubcategoriaRepositorio {
-    
+public class TesteSubcategoriaRepositorio {    
     private SubcategoriaRepositorio repositorioSubcategoria;
 
     public TesteSubcategoriaRepositorio() {

@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public abstract class BaseFakeDB<T> {
-
     protected List<T> tabela;
 
     public List<T> getTabela() {

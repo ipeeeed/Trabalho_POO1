@@ -1,7 +1,6 @@
 package br.com.atacado.fakeDB;
 
 import java.time.LocalDate;
-
 import br.com.atacado.dominio.Produto;
 
 public class ProdutoFakeDB extends BaseFakeDB<Produto> {

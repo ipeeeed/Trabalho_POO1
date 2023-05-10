@@ -4,15 +4,10 @@ import java.time.LocalDate;
 import java.util.List;
 
 public class Subcategoria {
-
     private int codigo;
-
     private int codigoCategoria;
-
     private String descricao;
-
     private LocalDate dataDeInclusao;
-
     private List<Produto> produtos;
 
     public int getCodigo() {
@@ -56,13 +51,6 @@ public class Subcategoria {
     }
 
     public Subcategoria() {
-    }
-
-    public Subcategoria(int codigo, int codigoCategoria, String descricao, LocalDate dataDeInclusao) {
-        this.codigo = codigo;
-        this.codigoCategoria = codigoCategoria;
-        this.descricao = descricao;
-        this.dataDeInclusao = dataDeInclusao;
     }
 
     public Subcategoria(int codigo, String descricao, LocalDate dataDeInclusao, int codigoCategoria) {

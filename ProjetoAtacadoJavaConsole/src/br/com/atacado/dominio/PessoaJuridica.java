@@ -40,6 +40,9 @@ public class PessoaJuridica extends BasePessoa {
         this.nomeFantasia = nomeFantasia;
     }
 
+    public PessoaJuridica() {
+    }
+
     public PessoaJuridica(int codigoPessoa, String nome, String email, String site, LocalDate dataInclusao, String cnpj,
             String inscricaoEstadual, String inscricaoMunicipal, String nomeFantasia) {
         super(codigoPessoa, nome, email, site, dataInclusao);

@@ -3,17 +3,11 @@ package br.com.atacado.dominio;
 import java.time.LocalDate;
 
 public class Produto {
-
     private int codigo;
-
     private int codigoSubcategoria;
-
     private int codigoCategoria;
-
     private String descricao;
-
     private double valor;
-
     private LocalDate dataDeInclusao;
 
     public int getCodigo() {
@@ -65,14 +59,6 @@ public class Produto {
     }
 
     public Produto() {
-    }
-
-    public Produto(int codigo, int codigoSubcategoria, String descricao, double valor, LocalDate dataDeInclusao) {
-        this.codigo = codigo;
-        this.codigoSubcategoria = codigoSubcategoria;
-        this.descricao = descricao;
-        this.valor = valor;
-        this.dataDeInclusao = dataDeInclusao;
     }
 
     public Produto(int codigo, int codigoSubcategoria, int codigoCategoria, String descricao,

@@ -15,10 +15,10 @@ public class Frota extends BaseTransporte {
     }
 
     public Frota() {
-        super();
     }
 
-    public Frota(int codigo, String descricao, LocalDate dataInsert) {
+    public Frota(int codigo, String descricao, LocalDate dataInsert, List<Veiculo> veiculos) {
         super(codigo, descricao, dataInsert);
+        this.veiculos = veiculos;
     }
 }

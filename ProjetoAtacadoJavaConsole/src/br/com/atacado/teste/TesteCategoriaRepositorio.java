@@ -5,7 +5,6 @@ import br.com.atacado.dominio.Categoria;
 import br.com.atacado.repositorio.CategoriaRepositorio;
 
 public class TesteCategoriaRepositorio {
-
     private CategoriaRepositorio repositorioCategoria;
 
     public TesteCategoriaRepositorio() {

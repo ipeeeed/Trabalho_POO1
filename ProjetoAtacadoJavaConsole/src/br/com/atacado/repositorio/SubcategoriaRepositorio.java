@@ -45,5 +45,4 @@ public class SubcategoriaRepositorio extends BaseRepositorio<Subcategoria> {
         }
         return alteracao;
     }
-
 }

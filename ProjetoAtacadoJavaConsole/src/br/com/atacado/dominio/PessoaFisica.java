@@ -76,6 +76,9 @@ public class PessoaFisica extends BasePessoa {
         this.nomeMae = nomeMae;
     }
 
+    public PessoaFisica() {
+    }
+
     public PessoaFisica(int codigoPessoa, String nome, String email, String site, LocalDate dataInclusao, String cpf,
             String rg, String sexo, String raca, String nacionalidade, String naturalidade, String nomePai,
             String nomeMae) {

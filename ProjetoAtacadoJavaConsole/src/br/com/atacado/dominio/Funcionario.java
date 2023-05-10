@@ -40,11 +40,7 @@ public class Funcionario extends PessoaFisica {
         this.dataContratacao = dataContratacao;
     }
 
-    public Funcionario(int codigoPessoa, String nome, String email, String site, LocalDate dataInclusao, String cpf,
-            String rg, String sexo, String raca, String nacionalidade, String naturalidade, String nomePai,
-            String nomeMae) {
-        super(codigoPessoa, nome, email, site, dataInclusao, cpf, rg, sexo, raca, nacionalidade, naturalidade, nomePai,
-                nomeMae);
+    public Funcionario() {
     }
 
     public Funcionario(int codigoPessoa, String nome, String email, String site, LocalDate dataInclusao, String cpf,

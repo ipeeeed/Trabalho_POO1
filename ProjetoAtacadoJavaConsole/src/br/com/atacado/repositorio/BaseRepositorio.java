@@ -2,8 +2,7 @@ package br.com.atacado.repositorio;
 
 import java.util.List;
 
-public abstract class BaseRepositorio<TTipo> implements
-        IBaseRepositorio<TTipo> {
+public abstract class BaseRepositorio<TTipo> implements IBaseRepositorio<TTipo> {
 
     protected List<TTipo> tabela;
 
@@ -20,5 +19,4 @@ public abstract class BaseRepositorio<TTipo> implements
         }
         return original;
     }
-
 }

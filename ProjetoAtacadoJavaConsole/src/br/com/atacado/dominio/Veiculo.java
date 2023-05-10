@@ -23,7 +23,6 @@ public class Veiculo extends BaseTransporte {
     }
     
     public Veiculo() {
-        super();
     }
 
     public Veiculo(int codigo, String descricao, LocalDate dataInsert, int codigoFrota, String placa) {

@@ -1,6 +1,4 @@
-import br.com.atacado.teste.TesteCategoriaRepositorio;
-import br.com.atacado.teste.TesteSubcategoriaRepositorio;
-import br.com.atacado.teste.TesteProdutoRepositorio;
+import br.com.atacado.teste.*;
 
 public class App {
 

@@ -35,7 +35,6 @@ public abstract class BaseTransporte {
     }
 
     public BaseTransporte(int codigo, String descricao, LocalDate dataInsert) {
-        super();
         this.codigo = codigo;
         this.descricao = descricao;
         this.dataInsert = dataInsert;
