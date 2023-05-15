@@ -1,4 +1,4 @@
-package br.com.atacado.dominio;
+package br.com.transporte.dominio;
 
 import java.time.LocalDate;
 import java.util.List;
