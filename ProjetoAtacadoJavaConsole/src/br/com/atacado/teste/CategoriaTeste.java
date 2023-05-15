@@ -6,7 +6,6 @@ import br.com.atacado.dominio.Categoria;
 import br.com.atacado.servico.CategoriaServico;
 
 public class CategoriaTeste extends BaseTeste<Categoria> {
-
     public CategoriaTeste() {
         this.servico = new CategoriaServico();
     }
@@ -59,5 +58,4 @@ public class CategoriaTeste extends BaseTeste<Categoria> {
         Categoria excluido = this.servico.Deletar(alvo.getCodigo());
         System.out.println(excluido.toString());
     }
-
 }

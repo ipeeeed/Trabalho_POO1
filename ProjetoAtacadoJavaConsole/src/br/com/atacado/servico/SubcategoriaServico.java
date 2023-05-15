@@ -34,5 +34,4 @@ public class SubcategoriaServico extends BaseServico<Subcategoria> {
     public Subcategoria Deletar(int chave) {
         return this.repositorio.Delete(chave);
     }
-
 }

@@ -76,5 +76,4 @@ public class Produto {
         return "Produto [codigo=" + codigo + ", codigoSubcategoria=" + codigoSubcategoria + ", descricao=" + descricao
                 + ", valor=" + valor + ", dataDeInclusao=" + dataDeInclusao + "]";
     }
-
 }

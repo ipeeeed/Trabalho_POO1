@@ -6,6 +6,5 @@ public abstract class BaseServico<TDado> implements IBaseServico<TDado> {
     protected BaseRepositorio<TDado> repositorio;
 
     public BaseServico() {
-
     }
 }

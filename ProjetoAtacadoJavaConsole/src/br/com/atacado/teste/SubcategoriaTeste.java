@@ -2,12 +2,10 @@ package br.com.atacado.teste;
 
 import java.time.LocalDate;
 import java.util.List;
-
 import br.com.atacado.dominio.Subcategoria;
 import br.com.atacado.servico.SubcategoriaServico;
 
 public class SubcategoriaTeste extends BaseTeste<Subcategoria> {
-
     public SubcategoriaTeste() {
         this.servico = new SubcategoriaServico();
     }
@@ -61,5 +59,4 @@ public class SubcategoriaTeste extends BaseTeste<Subcategoria> {
         Subcategoria excluido = this.servico.Deletar(alvo.getCodigo());
         System.out.println(excluido.toString());
     }
-
 }

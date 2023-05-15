@@ -3,8 +3,7 @@ package br.com.atacado.repositorio;
 import br.com.atacado.dominio.Produto;
 import br.com.atacado.fakeDB.ProdutoFakeDB;
 
-public class ProdutoRepositorio extends BaseRepositorio<Produto> {
-    
+public class ProdutoRepositorio extends BaseRepositorio<Produto> {    
     public ProdutoRepositorio() {
         this.tabela = new ProdutoFakeDB().getTabela();
     }

@@ -65,5 +65,4 @@ public class Subcategoria {
         return "Subcategoria [codigo=" + codigo + ", codigoCategoria=" + codigoCategoria + ", descricao=" + descricao
                 + ", dataDeInclusao=" + dataDeInclusao + "]";
     }
-
 }
