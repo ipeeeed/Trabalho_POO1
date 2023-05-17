@@ -8,5 +8,4 @@ public interface IBaseRepositorio<TTipo> {
     List<TTipo> Read();
     TTipo Update(TTipo obj);
     TTipo Delete(int chave);
-
 }
