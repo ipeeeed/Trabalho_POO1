@@ -3,10 +3,10 @@ package br.com.pessoas.dominio;
 import java.time.LocalDate;
 
 public class Funcionario extends PessoaFisica {
-    protected String matricula;
-    protected String login;
-    protected String senha;
-    protected LocalDate dataContratacao;
+    private String matricula;
+    private String login;
+    private String senha;
+    private LocalDate dataContratacao;
 
     public String getMatricula() {
         return matricula;

@@ -39,4 +39,10 @@ public abstract class BaseTransporte {
         this.descricao = descricao;
         this.dataInsert = dataInsert;
     }
+
+    @Override
+    public String toString() {
+        return "BaseTransporte [codigo=" + codigo + ", descricao=" + descricao + ", dataInsert=" + dataInsert + "]";
+    }
+    
 }

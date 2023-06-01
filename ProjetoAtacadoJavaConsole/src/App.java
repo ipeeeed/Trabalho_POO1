@@ -12,7 +12,7 @@ public class App {
         // TesteProdutoRepositorio teste3 = new TesteProdutoRepositorio();
         // teste3.Executar();
 
-        CategoriaTeste teste = new CategoriaTeste();
+        ProdutoTeste teste = new ProdutoTeste();
         teste.Executar();
 
     }
