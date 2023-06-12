@@ -1,5 +1,5 @@
 package br.com.banco.teste;
 
-public class PessoaTeste {
+public class ProfissaoTeste {
     
 }

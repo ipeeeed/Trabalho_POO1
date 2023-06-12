@@ -31,4 +31,16 @@ public class InstituicaoBancaria extends BaseAtributos {
         this.codigoBanco = codigoBanco;
         this.siteWWW = siteWWW;
     }
+
+    @Override
+    public String toString() {
+        return "InstituicaoBancaria [codigoBanco=" + codigoBanco + 
+        ", siteWWW=" + siteWWW + 
+        "codigo=" + codigo + 
+        ", descricao=" + descricao + 
+        ", dataInclusao=" + dataInclusao + 
+        ", ativo=" + ativo + 
+        "]";
+    }
+    
 }
