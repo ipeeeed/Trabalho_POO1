@@ -1,5 +1,5 @@
 package br.com.transporte.servico;
 
-public abstract class BaseServico {
-    
+public abstract class BaseServico<TService> {
+
 }

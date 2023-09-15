@@ -1,5 +1,5 @@
 package br.com.biblioteca.servico;
 
-public interface IBaseServico {
-    
+public interface IBaseServico<TService> {
+
 }

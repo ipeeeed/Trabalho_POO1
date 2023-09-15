@@ -2,7 +2,6 @@ package br.com.atacado.teste;
 
 import java.time.LocalDate;
 import java.util.List;
-
 import br.com.atacado.dominio.Produto;
 import br.com.atacado.servico.ProdutoServico;
 

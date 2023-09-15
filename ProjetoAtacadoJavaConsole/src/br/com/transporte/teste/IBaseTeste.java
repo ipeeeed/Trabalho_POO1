@@ -1,5 +1,5 @@
 package br.com.transporte.teste;
 
-public interface IBaseTeste {
-    
+public interface IBaseTeste<TTeste> {
+
 }

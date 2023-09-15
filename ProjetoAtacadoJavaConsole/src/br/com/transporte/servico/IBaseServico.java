@@ -1,5 +1,5 @@
 package br.com.transporte.servico;
 
-public interface IBaseServico {
-    
+public interface IBaseServico<TService> {
+
 }

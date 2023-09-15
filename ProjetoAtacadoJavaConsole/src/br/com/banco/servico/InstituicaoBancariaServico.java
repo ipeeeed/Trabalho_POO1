@@ -34,5 +34,4 @@ public class InstituicaoBancariaServico extends BaseServico<InstituicaoBancaria>
     public InstituicaoBancaria Deletar(int chave) {
         return this.repositorio.Delete(chave);
     }
-    
 }

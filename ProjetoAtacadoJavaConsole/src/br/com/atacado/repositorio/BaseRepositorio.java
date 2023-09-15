@@ -2,17 +2,17 @@ package br.com.atacado.repositorio;
 
 import java.util.List;
 
-public abstract class BaseRepositorio<TTipo> implements IBaseRepositorio<TTipo> {
-    protected List<TTipo> tabela;
+public abstract class BaseRepositorio<TRepos> implements IBaseRepositorio<TRepos> {
+    protected List<TRepos> tabela;
 
     @Override
-    public List<TTipo> Read() {
+    public List<TRepos> Read() {
         return this.tabela;
     }
 
     @Override
-    public TTipo Delete(int chave) {
-        TTipo original = this.Read(chave);
+    public TRepos Delete(int chave) {
+        TRepos original = this.Read(chave);
         if (original != null) {
             this.tabela.remove(original);
         }

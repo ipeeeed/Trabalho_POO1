@@ -1,5 +1,5 @@
 package br.com.transporte.repositorio;
 
-public abstract class BaseRepositorio {
-    
+public abstract class BaseRepositorio<TRepos> {
+
 }

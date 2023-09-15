@@ -1,5 +1,5 @@
 package br.com.biblioteca.repositorio;
 
-public abstract class BaseRepositorio {
-    
+public abstract class BaseRepositorio<TRepos> {
+
 }

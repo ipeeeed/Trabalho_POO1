@@ -1,5 +1,5 @@
 package br.com.transporte.repositorio;
 
-public interface IBaseRepositorio {
-    
+public interface IBaseRepositorio<TRepos> {
+
 }
