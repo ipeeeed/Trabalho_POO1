@@ -44,5 +44,4 @@ public abstract class BaseTransporte {
     public String toString() {
         return "BaseTransporte [codigo=" + codigo + ", descricao=" + descricao + ", dataInsert=" + dataInsert + "]";
     }
-    
 }

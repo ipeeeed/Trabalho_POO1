@@ -42,5 +42,4 @@ public class InstituicaoBancaria extends BaseAtributos {
         ", ativo=" + ativo + 
         "]";
     }
-    
 }

@@ -54,5 +54,4 @@ public class InstituicaoBancariaTeste extends BaseTeste<InstituicaoBancaria> {
         InstituicaoBancaria excluido = this.servico.Deletar(alvo.getCodigo());
         System.out.println(excluido.toString());
     }
-
 }

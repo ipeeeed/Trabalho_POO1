@@ -12,5 +12,4 @@ public class InstituicaoBancariaFakeDB extends BaseFakeDB<InstituicaoBancaria> {
         this.tabela.add(new InstituicaoBancaria(2, "BrasilBank", LocalDate.now(), true, 033, "www.bb.com.br"));
         this.tabela.add(new InstituicaoBancaria(3, "BOX", LocalDate.now(), true, 404, "www.caixa.com.br"));
     }
-    
 }

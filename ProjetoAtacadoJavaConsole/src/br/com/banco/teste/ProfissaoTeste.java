@@ -38,5 +38,4 @@ public class ProfissaoTeste extends BaseTeste<Profissao> {
     protected void TestarExclusao(int chave) {
 
     }
-
 }

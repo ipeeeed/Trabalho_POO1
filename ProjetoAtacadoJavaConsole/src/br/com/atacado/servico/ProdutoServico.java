@@ -33,5 +33,4 @@ public class ProdutoServico extends BaseServico<Produto> {
     public Produto Deletar(int chave) {
         return this.repositorio.Delete(chave);
     }
-    
 }

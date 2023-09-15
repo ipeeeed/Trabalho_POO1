@@ -40,5 +40,4 @@ public class ProfissaoRepositorio extends BaseRepositorio<Profissao> {
         }
         return alteracao;
     }
-    
 }

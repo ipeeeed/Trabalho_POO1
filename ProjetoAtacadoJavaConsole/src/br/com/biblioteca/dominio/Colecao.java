@@ -30,5 +30,4 @@ public class Colecao extends BaseBiblioteca {
         super(codigo, descricao, dataCadastro);
         this.editora = editora;
     }
-    
 }
