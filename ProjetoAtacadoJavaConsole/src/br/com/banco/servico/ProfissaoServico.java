@@ -26,7 +26,7 @@ public class ProfissaoServico extends BaseServico<Profissao> {
     }
 
     @Override
-    public Profissao Atualiza(Profissao obj) {
+    public Profissao Atualizar(Profissao obj) {
         return this.repositorio.Update(obj);
     }
 

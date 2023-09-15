@@ -1,8 +1,12 @@
 package br.com.banco.repositorio;
 
 import br.com.banco.dominio.Profissao;
+import br.com.banco.fakeDB.ProfissaoFakeDB;
 
 public class ProfissaoRepositorio extends BaseRepositorio<Profissao> {
+    public ProfissaoRepositorio() {
+        this.tabela = new ProfissaoFakeDB().getTabela();
+    }
 
     @Override
     public Profissao Create(Profissao obj) {

@@ -12,13 +12,17 @@ public class ProdutoTeste extends BaseTeste<Produto> {
 
     @Override
     public void Executar() {
+        System.out.println("\n");
         int valorChave = this.TestarCriacao();
         this.TestarAlteracao(valorChave);
+        this.TestarLeitura(valorChave);
         this.TestarExclusao(valorChave);
+        // this.TestarLeituraVarios();
     }
 
     @Override
     protected int TestarCriacao() {
+        System.out.println("Agora testando CRIAÇÃO: ");
         Produto prd = new Produto(1, 1, 1, "Papona", LocalDate.now());
         Produto novo = this.servico.Criar(prd);
         System.out.println(novo.toString());
@@ -27,6 +31,7 @@ public class ProdutoTeste extends BaseTeste<Produto> {
 
     @Override
     protected void TestarLeitura(int chave) {
+        System.out.println("Agora testando LEITURA: ");
         Produto prd = this.servico.Ler(chave);
         System.out.println(prd.toString());
     }
@@ -41,6 +46,7 @@ public class ProdutoTeste extends BaseTeste<Produto> {
 
     @Override
     protected void TestarAlteracao(int chave) {
+        System.out.println("Agora testando ALTERAÇÃO: ");
         Produto antigo = this.servico.Ler(chave);
         antigo.setDescricao("Mingal");
         Produto alterada = this.servico.Atualizar(antigo);
@@ -49,6 +55,7 @@ public class ProdutoTeste extends BaseTeste<Produto> {
 
     @Override
     protected void TestarExclusao(int chave) {
+        System.out.println("Agora testando EXCLUSÃO: ");
         Produto alvo = this.servico.Ler(chave);
         Produto excluido = this.servico.Deletar(alvo.getCodigo());
         System.out.println(excluido.toString());

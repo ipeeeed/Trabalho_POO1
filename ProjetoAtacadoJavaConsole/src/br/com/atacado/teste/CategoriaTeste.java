@@ -12,16 +12,17 @@ public class CategoriaTeste extends BaseTeste<Categoria> {
 
     @Override
     public void Executar() {
+        System.out.println("\n");
         int valorChave = this.TestarCriacao();
         this.TestarAlteracao(valorChave);
+        this.TestarLeitura(valorChave);
         this.TestarExclusao(valorChave);
-        // this.TestarLeitura(valorChave);
         // this.TestarLeituraVarios();
     }
 
     @Override
     protected int TestarCriacao() {
-        System.out.println("Agora testando criação: ");
+        System.out.println("Agora testando CRIAÇÃO: ");
         Categoria cat = new Categoria(0, "Bandeja", LocalDate.now());
         Categoria novo = this.servico.Criar(cat);
         System.out.println(novo.toString());
@@ -30,6 +31,7 @@ public class CategoriaTeste extends BaseTeste<Categoria> {
 
     @Override
     protected void TestarLeitura(int chave) {
+        System.out.println("Agora testando LEITURA: ");
         Categoria cat = this.servico.Ler(chave);
         System.out.println(cat.toString());
     }
@@ -44,7 +46,7 @@ public class CategoriaTeste extends BaseTeste<Categoria> {
 
     @Override
     protected void TestarAlteracao(int chave) {
-        System.out.println("Agora testando alteração: ");
+        System.out.println("Agora testando ALTERAÇÃO: ");
         Categoria antigo = this.servico.Ler(chave);
         antigo.setDescricao("Granadas de mão");
         Categoria alterada = this.servico.Atualizar(antigo);
@@ -53,7 +55,7 @@ public class CategoriaTeste extends BaseTeste<Categoria> {
 
     @Override
     protected void TestarExclusao(int chave) {
-        System.out.println("Agora testando exclusão: ");
+        System.out.println("Agora testando EXCLUSÃO: ");
         Categoria alvo = this.servico.Ler(chave);
         Categoria excluido = this.servico.Deletar(alvo.getCodigo());
         System.out.println(excluido.toString());

@@ -26,7 +26,7 @@ public class InstituicaoBancariaServico extends BaseServico<InstituicaoBancaria>
     }
 
     @Override
-    public InstituicaoBancaria Atualiza(InstituicaoBancaria obj) {
+    public InstituicaoBancaria Atualizar(InstituicaoBancaria obj) {
         return this.repositorio.Update(obj);
     }
 

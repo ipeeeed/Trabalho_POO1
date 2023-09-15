@@ -12,16 +12,17 @@ public class SubcategoriaTeste extends BaseTeste<Subcategoria> {
 
     @Override
     public void Executar() {
+        System.out.println("\n");
         int valorChave = this.TestarCriacao();
         this.TestarAlteracao(valorChave);
+        this.TestarLeitura(valorChave);
         this.TestarExclusao(valorChave);
-        // this.TestarLeitura(valorChave);
         // this.TestarLeituraVarios();
     }
 
     @Override
     protected int TestarCriacao() {
-        System.out.println("Agora testando criação: ");
+        System.out.println("Agora testando CRIAÇÃO: ");
         Subcategoria sub = new Subcategoria(0, "Bandeja de Prata", LocalDate.now(), 0);
         Subcategoria novo = this.servico.Criar(sub);
         System.out.println(novo.toString());
@@ -30,6 +31,7 @@ public class SubcategoriaTeste extends BaseTeste<Subcategoria> {
 
     @Override
     protected void TestarLeitura(int chave) {
+        System.out.println("Agora testando LEITURA: ");
         Subcategoria sub = this.servico.Ler(chave);
         System.out.println(sub.toString());
     }
@@ -44,7 +46,7 @@ public class SubcategoriaTeste extends BaseTeste<Subcategoria> {
 
     @Override
     protected void TestarAlteracao(int chave) {
-        System.out.println("Agora testando alteração: ");
+        System.out.println("Agora testando ALTERAÇÃO: ");
         Subcategoria antigo = this.servico.Ler(chave);
         antigo.setDescricao("Copos de Plastico");
         Subcategoria alterada = this.servico.Atualizar(antigo);
@@ -54,7 +56,7 @@ public class SubcategoriaTeste extends BaseTeste<Subcategoria> {
 
     @Override
     protected void TestarExclusao(int chave) {
-        System.out.println("Agora testando exclusão: ");
+        System.out.println("Agora testando EXCLUSÃO: ");
         Subcategoria alvo = this.servico.Ler(chave);
         Subcategoria excluido = this.servico.Deletar(alvo.getCodigo());
         System.out.println(excluido.toString());

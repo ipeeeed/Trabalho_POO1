@@ -1,6 +1,6 @@
 package br.com.banco.teste;
 
-import br.com.atacado.servico.BaseServico;
+import br.com.banco.servico.BaseServico;
 
 public abstract class BaseTeste<TTeste> implements IBaseTeste<TTeste> {
     protected BaseServico<TTeste> servico;
