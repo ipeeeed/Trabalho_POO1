@@ -21,4 +21,13 @@ public class Frota extends BaseTransporte {
         super(codigo, descricao, dataInsert);
         this.veiculos = veiculos;
     }
+
+    @Override
+    public String toString() {
+        return "Frota [veiculos=" + veiculos +
+        "codigo=" + codigo +
+        ", descricao=" + descricao +
+        ", dataInsert" + dataInsert +
+        "]";
+    }
 }

@@ -2,7 +2,6 @@ package br.com.pessoas.teste;
 
 import java.time.LocalDate;
 import java.util.List;
-
 import br.com.pessoas.dominio.Funcionario;
 import br.com.pessoas.servico.FuncionarioServico;
 
@@ -25,9 +24,9 @@ public class FuncionarioTeste extends BaseTeste<Funcionario> {
     protected int TestarCriacao() {
         System.out.println("Agora testando CRIAÇÃO: ");
         Funcionario funcionario = new Funcionario(1, "Hamilton", "hmil@gmail.com", "não tem", LocalDate.now(), "12398764537", "454879", "M", "Pardo", "Brasileiro", "São Paulo", "Emanoel Freitas", "Gisele Bintin", "454687823", "hmiltom", "bgbgalsd123", LocalDate.now());
-        Funcionario novo = this.servico.Criar(funcionario);
-        System.out.println(novo.toString());
-        return novo.getCodigoPessoa();
+        Funcionario novoFuncionario = this.servico.Criar(funcionario);
+        System.out.println(novoFuncionario.toString());
+        return novoFuncionario.getCodigoPessoa();
     }
     
     @Override

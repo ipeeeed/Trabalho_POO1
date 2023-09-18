@@ -1,7 +1,6 @@
 package br.com.pessoas.servico;
 
 import java.util.List;
-
 import br.com.pessoas.dominio.Funcionario;
 import br.com.pessoas.repositorio.FuncionarioRepositorio;
 

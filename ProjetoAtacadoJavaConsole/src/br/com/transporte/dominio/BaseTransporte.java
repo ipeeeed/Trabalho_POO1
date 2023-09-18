@@ -42,6 +42,9 @@ public abstract class BaseTransporte {
 
     @Override
     public String toString() {
-        return "BaseTransporte [codigo=" + codigo + ", descricao=" + descricao + ", dataInsert=" + dataInsert + "]";
+        return "BaseTransporte [codigo=" + codigo +
+        ", descricao=" + descricao +
+        ", dataInsert=" + dataInsert +
+        "]";
     }
 }

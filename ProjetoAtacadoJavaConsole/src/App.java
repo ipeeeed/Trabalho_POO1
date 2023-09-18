@@ -38,6 +38,9 @@ public class App {
         pessoaJuridicaTeste.Executar();
 
         System.out.println("\nTESTE TRANSPORTE");
-
+        VeiculoTeste veiculoTeste = new VeiculoTeste();
+        veiculoTeste.Executar();
+        FrotaTeste frotaTeste = new FrotaTeste();
+        frotaTeste.Executar();
     }
 }

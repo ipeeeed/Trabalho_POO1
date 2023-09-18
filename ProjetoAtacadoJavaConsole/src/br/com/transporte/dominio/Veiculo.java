@@ -30,4 +30,14 @@ public class Veiculo extends BaseTransporte {
         this.codigoFrota = codigoFrota;
         this.placa = placa;
     }
+
+    @Override
+    public String toString() {
+        return "Veiculo [codigoFrota=" + codigoFrota +
+        ", placa=" + placa +
+        ", codigo=" + codigo +
+        ", descricao=" + descricao +
+        ", dataInsert" + dataInsert +
+        "]";
+    }
 }
