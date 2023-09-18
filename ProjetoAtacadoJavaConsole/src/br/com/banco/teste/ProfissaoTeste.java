@@ -2,12 +2,10 @@ package br.com.banco.teste;
 
 import java.time.LocalDate;
 import java.util.List;
-
 import br.com.banco.dominio.Profissao;
 import br.com.banco.servico.ProfissaoServico;
 
 public class ProfissaoTeste extends BaseTeste<Profissao> {
-
     public ProfissaoTeste() {
         this.servico = new ProfissaoServico();
     }
@@ -25,8 +23,8 @@ public class ProfissaoTeste extends BaseTeste<Profissao> {
     @Override
     protected int TestarCriacao() {
         System.out.println("Agora testando CRIAÇÃO: ");
-        Profissao prf = new Profissao(1, "Otorrinolaringologista", LocalDate.now(), true);
-        Profissao novo = this.servico.Criar(prf);
+        Profissao profissao = new Profissao(1, "Otorrinolaringologista", LocalDate.now(), true);
+        Profissao novo = this.servico.Criar(profissao);
         System.out.println(novo.toString());
         return novo.getCodigo();
     }
@@ -34,15 +32,15 @@ public class ProfissaoTeste extends BaseTeste<Profissao> {
     @Override
     protected void TestarLeitura(int chave) {
         System.out.println("Agora testando LEITURA: ");
-        Profissao prf = this.servico.Ler(chave);
-        System.out.println(prf.toString());
+        Profissao profissao = this.servico.Ler(chave);
+        System.out.println(profissao.toString());
     }
 
     @Override
     protected void TestarLeituraVarios() {
         List<Profissao> lista = this.servico.Ler();
-        for (Profissao prf : lista) {
-            System.out.println(prf.toString());
+        for (Profissao profissao : lista) {
+            System.out.println(profissao.toString());
         }
     }
 

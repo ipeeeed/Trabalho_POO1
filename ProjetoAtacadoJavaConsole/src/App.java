@@ -22,6 +22,12 @@ public class App {
         profissaoTeste.Executar();
         
         System.out.println("\nTESTE BIBLIOTECA");
+        AutorTeste autorTeste = new AutorTeste();
+        autorTeste.Executar();
+        ColecaoTeste colecaoTeste = new ColecaoTeste();
+        colecaoTeste.Executar();
+        LivroTeste livroTeste = new LivroTeste();
+        livroTeste.Executar();
 
         System.out.println("\nTESTE PESSOAS");
 

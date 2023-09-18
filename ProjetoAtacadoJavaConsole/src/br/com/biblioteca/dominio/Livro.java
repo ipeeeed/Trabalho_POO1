@@ -41,4 +41,17 @@ public class Livro extends BaseBiblioteca {
         this.codigoAutor = codigoAutor;
         this.titulo = titulo;
     }
+
+    @Override
+    public String toString() {
+        return "Livro [codigoISBN=" + codigoISBN +
+        ", codigoAutor=" + codigoAutor +
+        ", titulo=" + titulo +
+        ", codigo=" + codigo +
+        ", descricao=" + descricao +
+        ", dataCadastro=" + dataCadastro +
+        "]";
+    }
+
+    
 }

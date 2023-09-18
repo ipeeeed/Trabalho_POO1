@@ -1,5 +1,10 @@
 package br.com.biblioteca.servico;
 
-public abstract class BaseServico<TService> {
+import br.com.biblioteca.repositorio.BaseRepositorio;
 
+public abstract class BaseServico<TService> implements IBaseServico<TService> {
+    protected BaseRepositorio<TService> repositorio;
+
+    public BaseServico() {
+    }
 }

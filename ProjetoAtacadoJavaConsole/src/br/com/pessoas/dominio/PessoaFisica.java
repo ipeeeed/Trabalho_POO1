@@ -126,7 +126,7 @@ public class PessoaFisica extends BasePessoa {
                 ", nacionalidade=" + nacionalidade +
                 ", naturalidade=" + naturalidade +
                 ", nomePai=" + nomePai +
-                ", nomeMae=" + nomeMae
-                + "]";
+                ", nomeMae=" + nomeMae +
+                "]";
     }
 }

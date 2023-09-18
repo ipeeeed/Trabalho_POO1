@@ -29,5 +29,15 @@ public class Autor extends BaseBiblioteca {
         super(codigo, descricao, dataCadastro);
         this.nome = nome;
         this.sobreNome = sobreNome;
-    }    
+    }
+
+    @Override
+    public String toString() {
+        return "Autor [nome=" + nome +
+        ", sobreNome=" + sobreNome +
+        ", codigo=" + codigo +
+        ", descricao=" + descricao +
+        ", dataCadastro=" + dataCadastro +
+        "]";
+    }
 }

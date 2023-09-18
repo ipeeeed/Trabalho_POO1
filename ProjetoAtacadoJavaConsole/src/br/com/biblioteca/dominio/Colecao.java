@@ -30,4 +30,14 @@ public class Colecao extends BaseBiblioteca {
         super(codigo, descricao, dataCadastro);
         this.editora = editora;
     }
+
+    @Override
+    public String toString() {
+        return "Colecao [editora=" + editora +
+        ", livros=" + livros +
+        ", codigo=" + codigo +
+        ", descricao=" + descricao +
+        ", dataCadastro=" + dataCadastro +
+        "]";
+    }
 }

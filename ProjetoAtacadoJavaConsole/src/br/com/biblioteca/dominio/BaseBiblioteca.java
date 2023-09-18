@@ -38,5 +38,5 @@ public abstract class BaseBiblioteca {
         this.codigo = codigo;
         this.descricao = descricao;
         this.dataCadastro = dataCadastro;
-    }    
+    }
 }
