@@ -30,6 +30,12 @@ public class App {
         livroTeste.Executar();
 
         System.out.println("\nTESTE PESSOAS");
+        FuncionarioTeste funcionarioTeste = new FuncionarioTeste();
+        funcionarioTeste.Executar();
+        PessoaFisicaTeste pessoaFisicaTeste = new PessoaFisicaTeste();
+        pessoaFisicaTeste.Executar();
+        PessoaJuridicaTeste pessoaJuridicaTeste = new PessoaJuridicaTeste();
+        pessoaJuridicaTeste.Executar();
 
         System.out.println("\nTESTE TRANSPORTE");
 

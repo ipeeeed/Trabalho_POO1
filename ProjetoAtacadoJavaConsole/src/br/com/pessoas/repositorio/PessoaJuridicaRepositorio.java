@@ -44,5 +44,4 @@ public class PessoaJuridicaRepositorio extends BaseRepositorio<PessoaJuridica> {
         }
         return alteracao;
     }
-    
 }
