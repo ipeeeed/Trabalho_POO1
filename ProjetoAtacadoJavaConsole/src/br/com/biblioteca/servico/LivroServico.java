@@ -1,6 +1,8 @@
 package br.com.biblioteca.servico;
 
 import java.util.List;
+
+import br.com.bases.BaseServico;
 import br.com.biblioteca.dominio.Livro;
 import br.com.biblioteca.repositorio.LivroRepositorio;
 

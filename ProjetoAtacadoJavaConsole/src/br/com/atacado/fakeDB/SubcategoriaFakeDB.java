@@ -2,6 +2,7 @@ package br.com.atacado.fakeDB;
 
 import java.time.LocalDate;
 import br.com.atacado.dominio.Subcategoria;
+import br.com.bases.BaseFakeDB;
 
 public class SubcategoriaFakeDB extends BaseFakeDB<Subcategoria> {
 

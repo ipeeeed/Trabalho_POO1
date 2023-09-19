@@ -1,6 +1,8 @@
 package br.com.transporte.servico;
 
 import java.util.List;
+
+import br.com.bases.BaseServico;
 import br.com.transporte.dominio.Veiculo;
 import br.com.transporte.repositorio.VeiculoRepositorio;
 

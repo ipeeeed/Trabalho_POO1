@@ -92,29 +92,11 @@ public class PessoaFisica extends BasePessoa {
         this.nomePai = nomePai;
         this.nomeMae = nomeMae;
     }
-
-    @Override
-    public void Imprimir() {
-        System.out.println("-- Detalhes da Pessoa Física --");
-        System.out.println("Código da Pessoa: " + this.codigoPessoa);
-        System.out.println("Nome: " + this.nome);
-        System.out.println("E-mail: " + this.email);
-        System.out.println("Site: " + this.site);
-        System.out.println("Data de Inclusão: " + this.dataInclusao);
-        System.out.println("CPF: " + this.cpf);
-        System.out.println("RG: " + this.rg);
-        System.out.println("Sexo: " + this.sexo);
-        System.out.println("Raça: " + this.raca);
-        System.out.println("Nacionalidade: " + this.nacionalidade);
-        System.out.println("Naturalidade: " + this.naturalidade);
-        System.out.println("Nome do Pai: " + this.nomePai);
-        System.out.println("Nome da Mãe: " + this.nomeMae);
-    }
-
+    
     @Override
     public String toString() {
         return "PessoaFisica [" +
-                "codigoPessoa=" + codigoPessoa +
+        "codigoPessoa=" + codigoPessoa +
                 ", nome=" + nome +
                 ", email=" + email +
                 ", site=" + site +
@@ -128,5 +110,23 @@ public class PessoaFisica extends BasePessoa {
                 ", nomePai=" + nomePai +
                 ", nomeMae=" + nomeMae +
                 "]";
-    }
+            }
+    
+        @Override
+        public void Imprimir() {
+            System.out.println("-- Detalhes da Pessoa Física --");
+            System.out.println("Código da Pessoa: " + this.codigoPessoa);
+            System.out.println("Nome: " + this.nome);
+            System.out.println("E-mail: " + this.email);
+            System.out.println("Site: " + this.site);
+            System.out.println("Data de Inclusão: " + this.dataInclusao);
+            System.out.println("CPF: " + this.cpf);
+            System.out.println("RG: " + this.rg);
+            System.out.println("Sexo: " + this.sexo);
+            System.out.println("Raça: " + this.raca);
+            System.out.println("Nacionalidade: " + this.nacionalidade);
+            System.out.println("Naturalidade: " + this.naturalidade);
+            System.out.println("Nome do Pai: " + this.nomePai);
+            System.out.println("Nome da Mãe: " + this.nomeMae);
+        }
 }

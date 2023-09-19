@@ -4,6 +4,7 @@ import java.time.LocalDate;
 import java.util.List;
 import br.com.atacado.dominio.Produto;
 import br.com.atacado.servico.ProdutoServico;
+import br.com.bases.BaseTeste;
 
 public class ProdutoTeste extends BaseTeste<Produto> {
     public ProdutoTeste() {

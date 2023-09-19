@@ -2,6 +2,7 @@ package br.com.banco.repositorio;
 
 import br.com.banco.dominio.Profissao;
 import br.com.banco.fakeDB.ProfissaoFakeDB;
+import br.com.bases.BaseRepositorio;
 
 public class ProfissaoRepositorio extends BaseRepositorio<Profissao> {
     public ProfissaoRepositorio() {

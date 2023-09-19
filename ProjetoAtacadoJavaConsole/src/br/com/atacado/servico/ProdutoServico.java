@@ -3,6 +3,7 @@ package br.com.atacado.servico;
 import java.util.List;
 import br.com.atacado.dominio.Produto;
 import br.com.atacado.repositorio.ProdutoRepositorio;
+import br.com.bases.BaseServico;
 
 public class ProdutoServico extends BaseServico<Produto> {
     public ProdutoServico() {

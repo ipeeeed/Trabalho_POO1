@@ -1,5 +1,6 @@
 package br.com.pessoas.repositorio;
 
+import br.com.bases.BaseRepositorio;
 import br.com.pessoas.dominio.PessoaFisica;
 import br.com.pessoas.fakeDB.PessoaFisicaFakeDB;
 

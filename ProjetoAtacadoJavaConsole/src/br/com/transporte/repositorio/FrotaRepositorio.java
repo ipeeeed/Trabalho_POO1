@@ -1,5 +1,6 @@
 package br.com.transporte.repositorio;
 
+import br.com.bases.BaseRepositorio;
 import br.com.transporte.dominio.Frota;
 import br.com.transporte.fakeDB.FrotaFakeDB;
 

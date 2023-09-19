@@ -3,34 +3,34 @@ package br.com.atacado.dominio;
 import java.time.LocalDate;
 import java.util.List;
 
-public class Categoria {
-    private int codigo;
-    private String descricao;
-    private LocalDate dataDeInclusao;
+public class Categoria extends BaseAtacado {
+    private int codigoCategoria;
+    private String descricaoCategoria;
+    private LocalDate dataDeInclusaoCategoria;
     private List<Subcategoria> subcategorias;
 
     public int getCodigo() {
-        return codigo;
+        return codigoCategoria;
     }
 
     public void setCodigo(int codigo) {
-        this.codigo = codigo;
+        this.codigoCategoria = codigo;
     }
 
     public String getDescricao() {
-        return descricao;
+        return descricaoCategoria;
     }
 
     public void setDescricao(String descricao) {
-        this.descricao = descricao;
+        this.descricaoCategoria = descricao;
     }
 
     public LocalDate getDataDeInclusao() {
-        return dataDeInclusao;
+        return dataDeInclusaoCategoria;
     }
 
     public void setDataDeInclusao(LocalDate dataDeInclusao) {
-        this.dataDeInclusao = dataDeInclusao;
+        this.dataDeInclusaoCategoria = dataDeInclusao;
     }
 
     public List<Subcategoria> getSubcategorias() {
@@ -45,13 +45,24 @@ public class Categoria {
     }
 
     public Categoria(int codigo, String descricao, LocalDate dataDeInclusao) {
-        this.codigo = codigo;
-        this.descricao = descricao;
-        this.dataDeInclusao = dataDeInclusao;
+        this.codigoCategoria = codigo;
+        this.descricaoCategoria = descricao;
+        this.dataDeInclusaoCategoria = dataDeInclusao;
     }
 
     @Override
     public String toString() {
-        return "Categoria [codigo=" + codigo + ", descricao=" + descricao + ", dataDeInclusao=" + dataDeInclusao + "]";
+        return "Categoria [codigoCategoria=" + codigoCategoria +
+        ", descricaoCategoria=" + descricaoCategoria +
+        ", dataDeInclusaoCategoria=" + dataDeInclusaoCategoria +
+        "]";
+    }
+
+    @Override
+    public void Imprimir() {
+        System.out.println("--- Detalhes de Categorias ---");
+        System.out.println("Código da Categoria: " + codigoCategoria);
+        System.out.println("Descrição da Categoria: " + descricaoCategoria);
+        System.out.println("Data de Inclusão da Categoria: " + dataDeInclusaoCategoria);
     }
 }

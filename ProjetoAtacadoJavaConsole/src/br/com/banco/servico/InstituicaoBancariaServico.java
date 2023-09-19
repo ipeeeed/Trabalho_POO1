@@ -3,6 +3,7 @@ package br.com.banco.servico;
 import java.util.List;
 import br.com.banco.dominio.InstituicaoBancaria;
 import br.com.banco.repositorio.InstituicaoBancariaRepositorio;
+import br.com.bases.BaseServico;
 
 public class InstituicaoBancariaServico extends BaseServico<InstituicaoBancaria> {
 

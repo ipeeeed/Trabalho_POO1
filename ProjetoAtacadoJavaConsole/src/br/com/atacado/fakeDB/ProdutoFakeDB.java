@@ -2,6 +2,7 @@ package br.com.atacado.fakeDB;
 
 import java.time.LocalDate;
 import br.com.atacado.dominio.Produto;
+import br.com.bases.BaseFakeDB;
 
 public class ProdutoFakeDB extends BaseFakeDB<Produto> {
 

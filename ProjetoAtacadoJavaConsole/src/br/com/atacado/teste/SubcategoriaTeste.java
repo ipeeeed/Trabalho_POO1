@@ -4,6 +4,7 @@ import java.time.LocalDate;
 import java.util.List;
 import br.com.atacado.dominio.Subcategoria;
 import br.com.atacado.servico.SubcategoriaServico;
+import br.com.bases.BaseTeste;
 
 public class SubcategoriaTeste extends BaseTeste<Subcategoria> {
     public SubcategoriaTeste() {

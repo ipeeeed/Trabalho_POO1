@@ -4,8 +4,8 @@ import java.time.LocalDate;
 
 public class Livro extends BaseBiblioteca {
     private String codigoISBN;
-    private int codigoAutor;
-    private String titulo;
+    private int codigoLivro;
+    private String tituloLivro;
     
     public String getCodigoISBN() {
         return codigoISBN;
@@ -15,20 +15,20 @@ public class Livro extends BaseBiblioteca {
         this.codigoISBN = codigoISBN;
     }
 
-    public int getCodigoAutor() {
-        return codigoAutor;
+    public int getCodigo() {
+        return codigoLivro;
     }
 
-    public void setCodigoAutor(int codigoAutor) {
-        this.codigoAutor = codigoAutor;
+    public void setCodigo(int codigoAutor) {
+        this.codigoLivro = codigoAutor;
     }
 
     public String getTitulo() {
-        return titulo;
+        return tituloLivro;
     }
 
     public void setTitulo(String titulo) {
-        this.titulo = titulo;
+        this.tituloLivro = titulo;
     }
 
     public Livro() {
@@ -38,20 +38,29 @@ public class Livro extends BaseBiblioteca {
             String titulo) {
         super(codigo, descricao, dataCadastro);
         this.codigoISBN = codigoISBN;
-        this.codigoAutor = codigoAutor;
-        this.titulo = titulo;
+        this.codigoLivro = codigoAutor;
+        this.tituloLivro = titulo;
     }
 
     @Override
     public String toString() {
         return "Livro [codigoISBN=" + codigoISBN +
-        ", codigoAutor=" + codigoAutor +
-        ", titulo=" + titulo +
-        ", codigo=" + codigo +
-        ", descricao=" + descricao +
-        ", dataCadastro=" + dataCadastro +
+        ", codigoAutor=" + codigoLivro +
+        ", codigo=" + codigoBiblioteca +
+        ", titulo=" + tituloLivro +
+        ", descricao=" + descricaoBiblioteca +
+        ", dataCadastro=" + dataCadastroBiblioteca +
         "]";
     }
 
-    
+    @Override
+    public void Imprimir() {
+        System.out.println("--- Detalhes dos Livros ---");
+        System.out.println("Código ISBN: " + codigoISBN);
+        System.out.println("Código do Livro: " + codigoLivro);
+        System.out.println("Código da Biblioteca: " + codigoBiblioteca);
+        System.out.println("Título do Livro: " + tituloLivro);
+        System.out.println("Descrição da Biblioteca: " + descricaoBiblioteca);
+        System.out.println("Data de Cadastro da Biblioteca" + dataCadastroBiblioteca);
+    }
 }

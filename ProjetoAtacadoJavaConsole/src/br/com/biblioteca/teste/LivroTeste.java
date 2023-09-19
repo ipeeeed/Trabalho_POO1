@@ -2,6 +2,8 @@ package br.com.biblioteca.teste;
 
 import java.time.LocalDate;
 import java.util.List;
+
+import br.com.bases.BaseTeste;
 import br.com.biblioteca.dominio.Livro;
 import br.com.biblioteca.servico.LivroServico;
 

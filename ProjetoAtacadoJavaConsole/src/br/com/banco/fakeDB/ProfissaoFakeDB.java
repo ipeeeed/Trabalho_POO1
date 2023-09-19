@@ -3,6 +3,7 @@ package br.com.banco.fakeDB;
 import java.time.LocalDate;
 
 import br.com.banco.dominio.Profissao;
+import br.com.bases.BaseFakeDB;
 
 public class ProfissaoFakeDB extends BaseFakeDB<Profissao> {
 

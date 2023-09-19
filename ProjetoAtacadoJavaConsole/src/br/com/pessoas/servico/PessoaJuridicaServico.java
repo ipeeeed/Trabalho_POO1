@@ -2,6 +2,7 @@ package br.com.pessoas.servico;
 
 import java.util.List;
 
+import br.com.bases.BaseServico;
 import br.com.pessoas.dominio.PessoaJuridica;
 import br.com.pessoas.repositorio.PessoaJuridicaRepositorio;
 

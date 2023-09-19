@@ -3,6 +3,7 @@ package br.com.atacado.servico;
 import java.util.List;
 import br.com.atacado.dominio.Subcategoria;
 import br.com.atacado.repositorio.SubcategoriaRepositorio;
+import br.com.bases.BaseServico;
 
 public class SubcategoriaServico extends BaseServico<Subcategoria> {
 

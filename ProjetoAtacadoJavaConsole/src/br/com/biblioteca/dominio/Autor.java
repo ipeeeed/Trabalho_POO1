@@ -3,41 +3,57 @@ package br.com.biblioteca.dominio;
 import java.time.LocalDate;
 
 public class Autor extends BaseBiblioteca {
-    private String nome;
-    private String sobreNome;
+    private int codigoAutor;
+    private String nomeAutor;
+    private String sobreNomeAutor;
+    
+    public int getCodigoAutor() {
+        return codigoAutor;
+    }
+
+    public void setCodigoAutor(int codigoAutor) {
+        this.codigoAutor = codigoAutor;
+    }
 
     public String getNome() {
-        return nome;
+        return nomeAutor;
     }
 
     public void setNome(String nome) {
-        this.nome = nome;
+        this.nomeAutor = nome;
     }
 
     public String getSobreNome() {
-        return sobreNome;
+        return sobreNomeAutor;
     }
 
     public void setSobreNome(String sobreNome) {
-        this.sobreNome = sobreNome;
+        this.sobreNomeAutor = sobreNome;
     }
 
     public Autor() {
     }
 
-    public Autor(int codigo, String descricao, LocalDate dataCadastro, String nome, String sobreNome) {
+    public Autor(int codigo, String descricao, LocalDate dataCadastro, String nome, String sobreNome, int codigoAutor) {
         super(codigo, descricao, dataCadastro);
-        this.nome = nome;
-        this.sobreNome = sobreNome;
+        this.codigoAutor = codigoAutor;
+        this.nomeAutor = nome;
+        this.sobreNomeAutor = sobreNome;
     }
 
     @Override
     public String toString() {
-        return "Autor [nome=" + nome +
-        ", sobreNome=" + sobreNome +
-        ", codigo=" + codigo +
-        ", descricao=" + descricao +
-        ", dataCadastro=" + dataCadastro +
+        return "Autor [codigoAutor=" + codigoAutor +
+        ", nome=" + nomeAutor +
+        ", sobreNome=" + sobreNomeAutor +
+        ", codigo=" + codigoBiblioteca +
+        ", descricao=" + descricaoBiblioteca +
+        ", dataCadastro=" + dataCadastroBiblioteca +
         "]";
+    }
+
+    @Override
+    public void Imprimir() {
+        
     }
 }

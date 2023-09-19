@@ -2,6 +2,7 @@ package br.com.banco.repositorio;
 
 import br.com.banco.dominio.InstituicaoBancaria;
 import br.com.banco.fakeDB.InstituicaoBancariaFakeDB;
+import br.com.bases.BaseRepositorio;
 
 public class InstituicaoBancariaRepositorio extends BaseRepositorio<InstituicaoBancaria> {
     public InstituicaoBancariaRepositorio() {

@@ -2,6 +2,8 @@ package br.com.pessoas.teste;
 
 import java.time.LocalDate;
 import java.util.List;
+
+import br.com.bases.BaseTeste;
 import br.com.pessoas.dominio.Funcionario;
 import br.com.pessoas.servico.FuncionarioServico;
 

@@ -30,4 +30,9 @@ public class Frota extends BaseTransporte {
         ", dataInsert" + dataInsert +
         "]";
     }
+
+    @Override
+    public void Imprimir() {
+        
+    }
 }

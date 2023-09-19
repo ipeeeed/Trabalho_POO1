@@ -1,5 +1,6 @@
 package br.com.biblioteca.repositorio;
 
+import br.com.bases.BaseRepositorio;
 import br.com.biblioteca.dominio.Colecao;
 import br.com.biblioteca.fakeDB.ColecaoFakeDB;
 

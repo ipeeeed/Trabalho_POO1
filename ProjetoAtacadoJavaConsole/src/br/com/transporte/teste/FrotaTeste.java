@@ -3,6 +3,7 @@ package br.com.transporte.teste;
 import java.time.LocalDate;
 import java.util.List;
 
+import br.com.bases.BaseTeste;
 import br.com.transporte.dominio.Frota;
 import br.com.transporte.servico.FrotaServico;
 

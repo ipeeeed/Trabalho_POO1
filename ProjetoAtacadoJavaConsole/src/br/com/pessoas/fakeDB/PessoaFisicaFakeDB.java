@@ -2,6 +2,7 @@ package br.com.pessoas.fakeDB;
 
 import java.time.LocalDate;
 
+import br.com.bases.BaseFakeDB;
 import br.com.pessoas.dominio.PessoaFisica;
 
 public class PessoaFisicaFakeDB extends BaseFakeDB<PessoaFisica> {

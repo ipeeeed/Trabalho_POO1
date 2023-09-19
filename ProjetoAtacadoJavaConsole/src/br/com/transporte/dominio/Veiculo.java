@@ -40,4 +40,9 @@ public class Veiculo extends BaseTransporte {
         ", dataInsert" + dataInsert +
         "]";
     }
+
+    @Override
+    public void Imprimir() {
+        
+    }
 }

@@ -3,6 +3,7 @@ package br.com.biblioteca.teste;
 import java.time.LocalDate;
 import java.util.List;
 
+import br.com.bases.BaseTeste;
 import br.com.biblioteca.dominio.Colecao;
 import br.com.biblioteca.servico.ColecaoServico;
 

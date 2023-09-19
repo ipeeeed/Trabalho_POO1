@@ -1,6 +1,8 @@
 package br.com.transporte.fakeDB;
 
 import java.time.LocalDate;
+
+import br.com.bases.BaseFakeDB;
 import br.com.transporte.dominio.Veiculo;
 
 public class VeiculoFakeDB extends BaseFakeDB<Veiculo> {

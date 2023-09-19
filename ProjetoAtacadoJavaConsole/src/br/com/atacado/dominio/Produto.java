@@ -2,20 +2,20 @@ package br.com.atacado.dominio;
 
 import java.time.LocalDate;
 
-public class Produto {
-    private int codigo;
+public class Produto extends BaseAtacado {
+    private int codigoProduto;
     private int codigoSubcategoria;
     private int codigoCategoria;
-    private String descricao;
-    private double valor;
-    private LocalDate dataDeInclusao;
+    private String descricaoProduto;
+    private double valorProduto;
+    private LocalDate dataDeInclusaoProduto;
 
     public int getCodigo() {
-        return codigo;
+        return codigoProduto;
     }
 
     public void setCodigo(int codigo) {
-        this.codigo = codigo;
+        this.codigoProduto = codigo;
     }
 
     public int getCodigoSubcategoria() {
@@ -27,27 +27,27 @@ public class Produto {
     }
 
     public String getDescricao() {
-        return descricao;
+        return descricaoProduto;
     }
 
     public void setDescricao(String descricao) {
-        this.descricao = descricao;
+        this.descricaoProduto = descricao;
     }
 
     public double getValor() {
-        return valor;
+        return valorProduto;
     }
 
     public void setValor(double valor) {
-        this.valor = valor;
+        this.valorProduto = valor;
     }
 
     public LocalDate getDataDeInclusao() {
-        return dataDeInclusao;
+        return dataDeInclusaoProduto;
     }
 
     public void setDataDeInclusao(LocalDate dataDeInclusao) {
-        this.dataDeInclusao = dataDeInclusao;
+        this.dataDeInclusaoProduto = dataDeInclusao;
     }
 
     public int getCodigoCategoria() {
@@ -63,17 +63,33 @@ public class Produto {
 
     public Produto(int codigo, int codigoSubcategoria, int codigoCategoria, String descricao,
             LocalDate dataDeInclusao) {
-        this.codigo = codigo;
+        this.codigoProduto = codigo;
         this.codigoSubcategoria = codigoSubcategoria;
         this.codigoCategoria = codigoCategoria;
-        this.descricao = descricao;
-        this.valor = 0.0;
-        this.dataDeInclusao = dataDeInclusao;
+        this.descricaoProduto = descricao;
+        this.valorProduto = 0.0;
+        this.dataDeInclusaoProduto = dataDeInclusao;
     }
 
     @Override
     public String toString() {
-        return "Produto [codigo=" + codigo + ", codigoSubcategoria=" + codigoSubcategoria + ", descricao=" + descricao
-                + ", valor=" + valor + ", dataDeInclusao=" + dataDeInclusao + "]";
+        return "Produto [codigoProduto=" + codigoProduto +
+        ", codigoSubcategoria=" + codigoSubcategoria +
+        ", codigoCategoria=" + codigoCategoria +
+        ", descricaoProduto=" + descricaoProduto +
+        ", valorProduto=" + valorProduto +
+        ", dataDeInclusaoProduto=" + dataDeInclusaoProduto +
+        "]";
+    }
+
+    @Override
+    public void Imprimir() {
+        System.out.println("--- Detalhes de Produtos ---");
+        System.out.println("Código do Produto: " + codigoProduto);
+        System.out.println("Código da Subcategoria: " + codigoSubcategoria);
+        System.out.println("Código da Categoria: " + codigoCategoria);
+        System.out.println("Descrição do Produto: " + descricaoProduto);
+        System.out.println("Valor do Produto: " + valorProduto);
+        System.out.println("Data de Inclusão do Produto: " + dataDeInclusaoProduto);
     }
 }

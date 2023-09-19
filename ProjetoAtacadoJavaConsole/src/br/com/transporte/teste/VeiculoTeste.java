@@ -2,6 +2,8 @@ package br.com.transporte.teste;
 
 import java.time.LocalDate;
 import java.util.List;
+
+import br.com.bases.BaseTeste;
 import br.com.transporte.dominio.Veiculo;
 import br.com.transporte.servico.VeiculoServico;
 

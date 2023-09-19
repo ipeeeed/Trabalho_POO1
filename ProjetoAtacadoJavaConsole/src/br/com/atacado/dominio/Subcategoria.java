@@ -3,19 +3,19 @@ package br.com.atacado.dominio;
 import java.time.LocalDate;
 import java.util.List;
 
-public class Subcategoria {
-    private int codigo;
+public class Subcategoria extends BaseAtacado {
+    private int codigoSubcategoria;
     private int codigoCategoria;
-    private String descricao;
-    private LocalDate dataDeInclusao;
+    private String descricaoSubcategoria;
+    private LocalDate dataDeInclusaoSubcategoria;
     private List<Produto> produtos;
 
     public int getCodigo() {
-        return codigo;
+        return codigoSubcategoria;
     }
 
     public void setCodigo(int codigo) {
-        this.codigo = codigo;
+        this.codigoSubcategoria = codigo;
     }
 
     public int getCodigoCategoria() {
@@ -27,19 +27,19 @@ public class Subcategoria {
     }
 
     public String getDescricao() {
-        return descricao;
+        return descricaoSubcategoria;
     }
 
     public void setDescricao(String descricao) {
-        this.descricao = descricao;
+        this.descricaoSubcategoria = descricao;
     }
 
     public LocalDate getDataDeInclusao() {
-        return dataDeInclusao;
+        return dataDeInclusaoSubcategoria;
     }
 
     public void setDataDeInclusao(LocalDate dataDeInclusao) {
-        this.dataDeInclusao = dataDeInclusao;
+        this.dataDeInclusaoSubcategoria = dataDeInclusao;
     }
 
     public List<Produto> getProdutos() {
@@ -54,15 +54,27 @@ public class Subcategoria {
     }
 
     public Subcategoria(int codigo, String descricao, LocalDate dataDeInclusao, int codigoCategoria) {
-        this.codigo = codigo;
+        this.codigoSubcategoria = codigo;
         this.codigoCategoria = codigoCategoria;
-        this.descricao = descricao;
-        this.dataDeInclusao = dataDeInclusao;
+        this.descricaoSubcategoria = descricao;
+        this.dataDeInclusaoSubcategoria = dataDeInclusao;
     }
 
     @Override
     public String toString() {
-        return "Subcategoria [codigo=" + codigo + ", codigoCategoria=" + codigoCategoria + ", descricao=" + descricao
-                + ", dataDeInclusao=" + dataDeInclusao + "]";
+        return "Subcategoria [codigoSubcategoria=" + codigoSubcategoria +
+        ", codigoCategoria=" + codigoCategoria +
+        ", descricaoSubcategoria=" + descricaoSubcategoria +
+        ", dataDeInclusaoSubcategoria=" + dataDeInclusaoSubcategoria +
+        "]";
+    }
+
+    @Override
+    public void Imprimir() {
+        System.out.println("--- Detalhes de Subcategorias ---");
+        System.out.println("Código da Subcategoria: " + codigoSubcategoria);
+        System.out.println("Código da Categoria: " + codigoCategoria);
+        System.out.println("Descrição da Subcategoria: " + descricaoSubcategoria);
+        System.out.println("Data de Inclusão da Subcategoria: " + dataDeInclusaoSubcategoria);
     }
 }

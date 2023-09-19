@@ -2,6 +2,7 @@ package br.com.atacado.repositorio;
 
 import br.com.atacado.dominio.Categoria;
 import br.com.atacado.fakeDB.CategoriaFakeDB;
+import br.com.bases.BaseRepositorio;
 
 public class CategoriaRepositorio extends BaseRepositorio<Categoria> {
 

@@ -4,6 +4,7 @@ import java.time.LocalDate;
 import java.util.List;
 import br.com.banco.dominio.InstituicaoBancaria;
 import br.com.banco.servico.InstituicaoBancariaServico;
+import br.com.bases.BaseTeste;
 
 public class InstituicaoBancariaTeste extends BaseTeste<InstituicaoBancaria> {
 

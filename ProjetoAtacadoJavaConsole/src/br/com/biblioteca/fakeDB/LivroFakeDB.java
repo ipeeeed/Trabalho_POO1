@@ -2,6 +2,7 @@ package br.com.biblioteca.fakeDB;
 
 import java.time.LocalDate;
 
+import br.com.bases.BaseFakeDB;
 import br.com.biblioteca.dominio.Livro;
 
 public class LivroFakeDB extends BaseFakeDB<Livro> {

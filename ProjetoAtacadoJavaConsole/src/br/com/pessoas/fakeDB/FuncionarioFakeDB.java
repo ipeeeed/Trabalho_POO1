@@ -1,6 +1,8 @@
 package br.com.pessoas.fakeDB;
 
 import java.time.LocalDate;
+
+import br.com.bases.BaseFakeDB;
 import br.com.pessoas.dominio.Funcionario;
 
 public class FuncionarioFakeDB extends BaseFakeDB<Funcionario> {

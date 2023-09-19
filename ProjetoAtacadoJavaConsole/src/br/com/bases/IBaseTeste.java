@@ -1,4 +1,4 @@
-package br.com.biblioteca.teste;
+package br.com.bases;
 
 public interface IBaseTeste<TTeste> {
     void Executar();

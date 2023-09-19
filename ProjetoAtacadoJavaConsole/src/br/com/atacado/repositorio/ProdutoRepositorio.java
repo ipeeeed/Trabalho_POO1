@@ -2,6 +2,7 @@ package br.com.atacado.repositorio;
 
 import br.com.atacado.dominio.Produto;
 import br.com.atacado.fakeDB.ProdutoFakeDB;
+import br.com.bases.BaseRepositorio;
 
 public class ProdutoRepositorio extends BaseRepositorio<Produto> {    
     public ProdutoRepositorio() {

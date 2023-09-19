@@ -3,40 +3,42 @@ package br.com.biblioteca.dominio;
 import java.time.LocalDate;
 
 public abstract class BaseBiblioteca {
-    protected int codigo;
-    protected String descricao;
-    protected LocalDate dataCadastro;
+    protected int codigoBiblioteca;
+    protected String descricaoBiblioteca;
+    protected LocalDate dataCadastroBiblioteca;
 
     public int getCodigo() {
-        return codigo;
+        return codigoBiblioteca;
     }
 
     public void setCodigo(int codigo) {
-        this.codigo = codigo;
+        this.codigoBiblioteca = codigo;
     }
 
     public String getDescricao() {
-        return descricao;
+        return descricaoBiblioteca;
     }
 
     public void setDescricao(String descricao) {
-        this.descricao = descricao;
+        this.descricaoBiblioteca = descricao;
     }
 
     public LocalDate getDataCadastro() {
-        return dataCadastro;
+        return dataCadastroBiblioteca;
     }
 
     public void setDataCadastro(LocalDate dataCadastro) {
-        this.dataCadastro = dataCadastro;
+        this.dataCadastroBiblioteca = dataCadastro;
     }
 
     public BaseBiblioteca() {
     }
 
     public BaseBiblioteca(int codigo, String descricao, LocalDate dataCadastro) {
-        this.codigo = codigo;
-        this.descricao = descricao;
-        this.dataCadastro = dataCadastro;
+        this.codigoBiblioteca = codigo;
+        this.descricaoBiblioteca = descricao;
+        this.dataCadastroBiblioteca = dataCadastro;
     }
+
+    public abstract void Imprimir();
 }

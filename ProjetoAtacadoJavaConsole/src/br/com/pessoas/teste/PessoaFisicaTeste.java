@@ -3,6 +3,7 @@ package br.com.pessoas.teste;
 import java.time.LocalDate;
 import java.util.List;
 
+import br.com.bases.BaseTeste;
 import br.com.pessoas.dominio.PessoaFisica;
 import br.com.pessoas.servico.PessoaFisicaServico;
 
