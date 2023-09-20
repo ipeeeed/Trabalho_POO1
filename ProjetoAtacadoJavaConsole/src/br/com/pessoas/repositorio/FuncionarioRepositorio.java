@@ -16,9 +16,9 @@ public class FuncionarioRepositorio extends BaseRepositorio<Funcionario> {
             chave++;
         } else {
             int tamanho = this.tabela.size();
-            chave = this.tabela.get(tamanho - 1).getCodigoPessoa() + 1;
+            chave = this.tabela.get(tamanho - 1).getCodigo() + 1;
         }
-        obj.setCodigoPessoa(chave);
+        obj.setCodigo(chave);
         this.tabela.add(obj);
         return obj;
     }
@@ -27,7 +27,7 @@ public class FuncionarioRepositorio extends BaseRepositorio<Funcionario> {
     public Funcionario Read(int chave) {
         Funcionario funcionario = new Funcionario();
         for (Funcionario tupla : tabela) {
-            if (tupla.getCodigoPessoa() == chave) {
+            if (tupla.getCodigo() == chave) {
                 funcionario = tupla;
                 break;
             } else {
@@ -39,7 +39,7 @@ public class FuncionarioRepositorio extends BaseRepositorio<Funcionario> {
 
     @Override
     public Funcionario Update(Funcionario obj) {
-        Funcionario alteracao = this.Read(obj.getCodigoPessoa());
+        Funcionario alteracao = this.Read(obj.getCodigo());
         if (alteracao != null) {
             alteracao.setLogin(obj.getLogin());
             alteracao.setSenha(obj.getSenha());

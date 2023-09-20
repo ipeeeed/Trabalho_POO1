@@ -62,11 +62,12 @@ public class Subcategoria extends BaseAtacado {
 
     @Override
     public String toString() {
-        return "Subcategoria [codigoSubcategoria=" + codigoSubcategoria +
-        ", codigoCategoria=" + codigoCategoria +
-        ", descricaoSubcategoria=" + descricaoSubcategoria +
-        ", dataDeInclusaoSubcategoria=" + dataDeInclusaoSubcategoria +
-        "]";
+        return "Subcategoria [" +
+                "codigoSubcategoria=" + codigoSubcategoria +
+                ", codigoCategoria=" + codigoCategoria +
+                ", descricaoSubcategoria=" + descricaoSubcategoria +
+                ", dataDeInclusaoSubcategoria=" + dataDeInclusaoSubcategoria +
+                "]";
     }
 
     @Override

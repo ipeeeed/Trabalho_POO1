@@ -34,13 +34,14 @@ public class InstituicaoBancaria extends BaseBanco {
 
     @Override
     public String toString() {
-        return "InstituicaoBancaria [codigoBanco=" + codigoBanco + 
-        "codigo=" + codigoInstituicaoBancaria + 
-        ", siteWWW=" + siteInstituicaoBancaria + 
-        ", descricao=" + descricaoBanco + 
-        ", dataInclusao=" + dataInclusaoBanco + 
-        ", ativo=" + ativoBanco + 
-        "]";
+        return "InstituicaoBancaria [" +
+                "codigoBanco=" + codigoBanco + 
+                "codigo=" + codigoInstituicaoBancaria + 
+                ", siteWWW=" + siteInstituicaoBancaria + 
+                ", descricao=" + descricaoBanco + 
+                ", dataInclusao=" + dataInclusaoBanco + 
+                ", ativo=" + ativoBanco + 
+                "]";
     }
 
     @Override

@@ -3,41 +3,41 @@ package br.com.transporte.dominio;
 import java.time.LocalDate;
 
 public abstract class BaseTransporte {
-    protected int codigo;
-    protected String descricao;
-    protected LocalDate dataInsert;
+    protected int codigoTransporte;
+    protected String descricaoTransporte;
+    protected LocalDate dataInclusaoTransporte;
 
     public int getCodigo() {
-        return codigo;
+        return codigoTransporte;
     }
 
     public void setCodigo(int codigo) {
-        this.codigo = codigo;
+        this.codigoTransporte = codigo;
     }
 
     public String getDescricao() {
-        return descricao;
+        return descricaoTransporte;
     }
 
     public void setDescricao(String descricao) {
-        this.descricao = descricao;
+        this.descricaoTransporte = descricao;
     }
 
     public LocalDate getDataInsert() {
-        return dataInsert;
+        return dataInclusaoTransporte;
     }
 
     public void setDataInsert(LocalDate dataInsert) {
-        this.dataInsert = dataInsert;
+        this.dataInclusaoTransporte = dataInsert;
     }
 
     public BaseTransporte() {
     }
 
     public BaseTransporte(int codigo, String descricao, LocalDate dataInsert) {
-        this.codigo = codigo;
-        this.descricao = descricao;
-        this.dataInsert = dataInsert;
+        this.codigoTransporte = codigo;
+        this.descricaoTransporte = descricao;
+        this.dataInclusaoTransporte = dataInsert;
     }
 
     public abstract void Imprimir();

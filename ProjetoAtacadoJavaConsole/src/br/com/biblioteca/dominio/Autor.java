@@ -43,17 +43,24 @@ public class Autor extends BaseBiblioteca {
 
     @Override
     public String toString() {
-        return "Autor [codigoAutor=" + codigoAutor +
-        ", nome=" + nomeAutor +
-        ", sobreNome=" + sobreNomeAutor +
-        ", codigo=" + codigoBiblioteca +
-        ", descricao=" + descricaoBiblioteca +
-        ", dataCadastro=" + dataCadastroBiblioteca +
-        "]";
+        return "Autor [" +
+                "codigoAutor=" + codigoAutor +
+                ", nome=" + nomeAutor +
+                ", sobreNome=" + sobreNomeAutor +
+                ", codigo=" + codigoBiblioteca +
+                ", descricao=" + descricaoBiblioteca +
+                ", dataCadastro=" + dataCadastroBiblioteca +
+                "]";
     }
 
     @Override
     public void Imprimir() {
-        
+        System.out.println("--- Detalhes de Autores ---");
+        System.out.println("Código do Autor: " + codigoAutor);
+        System.out.println("Nome do Autor: " + nomeAutor);
+        System.out.println("Sobrenome do Autor: " + sobreNomeAutor);
+        System.out.println("Código da Biblioteca: " + codigoBiblioteca);
+        System.out.println("Descrição da Biblioteca: " + descricaoBiblioteca);
+        System.out.println("Data de Cadastro da Biblioteca: " + dataCadastroBiblioteca);
     }
 }

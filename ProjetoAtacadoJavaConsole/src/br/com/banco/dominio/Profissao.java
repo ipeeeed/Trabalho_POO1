@@ -12,11 +12,12 @@ public class Profissao extends BaseBanco {
 
     @Override
     public String toString() {
-        return "Profissao [codigoBanco=" + codigoBanco + 
-        ", descricaoBanco=" + descricaoBanco + 
-        ", dataInclusaoBanco=" + dataInclusaoBanco + 
-        ", ativoBanco=" + ativoBanco + 
-        "]";
+        return "Profissao [" +
+                "codigoBanco=" + codigoBanco + 
+                ", descricaoBanco=" + descricaoBanco + 
+                ", dataInclusaoBanco=" + dataInclusaoBanco + 
+                ", ativoBanco=" + ativoBanco + 
+                "]";
     }
 
     @Override

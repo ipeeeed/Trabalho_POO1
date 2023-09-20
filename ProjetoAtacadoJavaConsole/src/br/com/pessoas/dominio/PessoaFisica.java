@@ -5,10 +5,10 @@ import java.time.LocalDate;
 public class PessoaFisica extends BasePessoa {
     protected String cpf;
     protected String rg;
-    protected String sexo;
-    protected String raca;
-    protected String nacionalidade;
-    protected String naturalidade;
+    protected String sexoPessoaFisica;
+    protected String racaPessoaFisica;
+    protected String nacionalidadePessoaFisica;
+    protected String naturalidadePessoaFisica;
     protected String nomePai;
     protected String nomeMae;
 
@@ -29,35 +29,35 @@ public class PessoaFisica extends BasePessoa {
     }
 
     public String getSexo() {
-        return sexo;
+        return sexoPessoaFisica;
     }
 
     public void setSexo(String sexo) {
-        this.sexo = sexo;
+        this.sexoPessoaFisica = sexo;
     }
 
     public String getRaca() {
-        return raca;
+        return racaPessoaFisica;
     }
 
     public void setRaca(String raca) {
-        this.raca = raca;
+        this.racaPessoaFisica = raca;
     }
 
     public String getNacionalidade() {
-        return nacionalidade;
+        return nacionalidadePessoaFisica;
     }
 
     public void setNacionalidade(String nacionalidade) {
-        this.nacionalidade = nacionalidade;
+        this.nacionalidadePessoaFisica = nacionalidade;
     }
 
     public String getNaturalidade() {
-        return naturalidade;
+        return naturalidadePessoaFisica;
     }
 
     public void setNaturalidade(String naturalidade) {
-        this.naturalidade = naturalidade;
+        this.naturalidadePessoaFisica = naturalidade;
     }
 
     public String getNomePai() {
@@ -85,10 +85,10 @@ public class PessoaFisica extends BasePessoa {
         super(codigoPessoa, nome, email, site, dataInclusao);
         this.cpf = cpf;
         this.rg = rg;
-        this.sexo = sexo;
-        this.raca = raca;
-        this.nacionalidade = nacionalidade;
-        this.naturalidade = naturalidade;
+        this.sexoPessoaFisica = sexo;
+        this.racaPessoaFisica = raca;
+        this.nacionalidadePessoaFisica = nacionalidade;
+        this.naturalidadePessoaFisica = naturalidade;
         this.nomePai = nomePai;
         this.nomeMae = nomeMae;
     }
@@ -96,17 +96,17 @@ public class PessoaFisica extends BasePessoa {
     @Override
     public String toString() {
         return "PessoaFisica [" +
-        "codigoPessoa=" + codigoPessoa +
-                ", nome=" + nome +
-                ", email=" + email +
-                ", site=" + site +
-                ", dataInclusao=" + dataInclusao +
+                "codigoPessoa=" + codigoPessoa +
+                ", nome=" + nomePessoa +
+                ", email=" + emailPessoa +
+                ", site=" + sitePessoa +
+                ", dataInclusao=" + dataInclusaoPessoa +
                 ", cpf=" + cpf +
                 ", rg=" + rg +
-                ", sexo=" + sexo +
-                ", raca=" + raca +
-                ", nacionalidade=" + nacionalidade +
-                ", naturalidade=" + naturalidade +
+                ", sexo=" + sexoPessoaFisica +
+                ", raca=" + racaPessoaFisica +
+                ", nacionalidade=" + nacionalidadePessoaFisica +
+                ", naturalidade=" + naturalidadePessoaFisica +
                 ", nomePai=" + nomePai +
                 ", nomeMae=" + nomeMae +
                 "]";
@@ -116,16 +116,16 @@ public class PessoaFisica extends BasePessoa {
         public void Imprimir() {
             System.out.println("-- Detalhes da Pessoa Física --");
             System.out.println("Código da Pessoa: " + this.codigoPessoa);
-            System.out.println("Nome: " + this.nome);
-            System.out.println("E-mail: " + this.email);
-            System.out.println("Site: " + this.site);
-            System.out.println("Data de Inclusão: " + this.dataInclusao);
+            System.out.println("Nome: " + this.nomePessoa);
+            System.out.println("E-mail: " + this.emailPessoa);
+            System.out.println("Site: " + this.sitePessoa);
+            System.out.println("Data de Inclusão: " + this.dataInclusaoPessoa);
             System.out.println("CPF: " + this.cpf);
             System.out.println("RG: " + this.rg);
-            System.out.println("Sexo: " + this.sexo);
-            System.out.println("Raça: " + this.raca);
-            System.out.println("Nacionalidade: " + this.nacionalidade);
-            System.out.println("Naturalidade: " + this.naturalidade);
+            System.out.println("Sexo: " + this.sexoPessoaFisica);
+            System.out.println("Raça: " + this.racaPessoaFisica);
+            System.out.println("Nacionalidade: " + this.nacionalidadePessoaFisica);
+            System.out.println("Naturalidade: " + this.naturalidadePessoaFisica);
             System.out.println("Nome do Pai: " + this.nomePai);
             System.out.println("Nome da Mãe: " + this.nomeMae);
         }

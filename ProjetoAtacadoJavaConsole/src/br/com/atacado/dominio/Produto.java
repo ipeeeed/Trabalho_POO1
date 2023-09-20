@@ -73,13 +73,14 @@ public class Produto extends BaseAtacado {
 
     @Override
     public String toString() {
-        return "Produto [codigoProduto=" + codigoProduto +
-        ", codigoSubcategoria=" + codigoSubcategoria +
-        ", codigoCategoria=" + codigoCategoria +
-        ", descricaoProduto=" + descricaoProduto +
-        ", valorProduto=" + valorProduto +
-        ", dataDeInclusaoProduto=" + dataDeInclusaoProduto +
-        "]";
+        return "Produto [" + 
+                "codigoProduto=" + codigoProduto +
+                ", codigoSubcategoria=" + codigoSubcategoria +
+                ", codigoCategoria=" + codigoCategoria +
+                ", descricaoProduto=" + descricaoProduto +
+                ", valorProduto=" + valorProduto +
+                ", dataDeInclusaoProduto=" + dataDeInclusaoProduto +
+                "]";
     }
 
     @Override

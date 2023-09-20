@@ -52,10 +52,11 @@ public class Categoria extends BaseAtacado {
 
     @Override
     public String toString() {
-        return "Categoria [codigoCategoria=" + codigoCategoria +
-        ", descricaoCategoria=" + descricaoCategoria +
-        ", dataDeInclusaoCategoria=" + dataDeInclusaoCategoria +
-        "]";
+        return "Categoria [" + 
+                "codigoCategoria=" + codigoCategoria +
+                ", descricaoCategoria=" + descricaoCategoria +
+                ", dataDeInclusaoCategoria=" + dataDeInclusaoCategoria +
+                "]";
     }
 
     @Override

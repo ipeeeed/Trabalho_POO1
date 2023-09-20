@@ -16,9 +16,9 @@ public class PessoaJuridicaRepositorio extends BaseRepositorio<PessoaJuridica> {
             chave++;
         } else {
             int tamanho = this.tabela.size();
-            chave = this.tabela.get(tamanho - 1).getCodigoPessoa() + 1;
+            chave = this.tabela.get(tamanho - 1).getCodigo() + 1;
         }
-        obj.setCodigoPessoa(chave);
+        obj.setCodigo(chave);
         this.tabela.add(obj);
         return obj;
     }
@@ -27,7 +27,7 @@ public class PessoaJuridicaRepositorio extends BaseRepositorio<PessoaJuridica> {
     public PessoaJuridica Read(int chave) {
         PessoaJuridica pessoaJuridica = new PessoaJuridica();
         for (PessoaJuridica tupla : tabela) {
-            if (tupla.getCodigoPessoa() == chave) {
+            if (tupla.getCodigo() == chave) {
                 pessoaJuridica = tupla;
                 break;
             } else {
@@ -39,7 +39,7 @@ public class PessoaJuridicaRepositorio extends BaseRepositorio<PessoaJuridica> {
 
     @Override
     public PessoaJuridica Update(PessoaJuridica obj) {
-        PessoaJuridica alteracao = this.Read(obj.getCodigoPessoa());
+        PessoaJuridica alteracao = this.Read(obj.getCodigo());
         if (alteracao != null) {
             alteracao.setEmail("Novo Email");
         }

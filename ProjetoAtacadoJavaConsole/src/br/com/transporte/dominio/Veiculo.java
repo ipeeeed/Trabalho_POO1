@@ -4,7 +4,7 @@ import java.time.LocalDate;
 
 public class Veiculo extends BaseTransporte {
     private int codigoFrota;
-    private String placa;
+    private String placaVeiculo;
     
     public int getCodigoFrota() {
         return codigoFrota;
@@ -15,11 +15,11 @@ public class Veiculo extends BaseTransporte {
     }
     
     public String getPlaca() {
-        return placa;
+        return placaVeiculo;
     }
 
     public void setPlaca(String placa) {
-        this.placa = placa;
+        this.placaVeiculo = placa;
     }
     
     public Veiculo() {
@@ -28,17 +28,18 @@ public class Veiculo extends BaseTransporte {
     public Veiculo(int codigo, String descricao, LocalDate dataInsert, int codigoFrota, String placa) {
         super(codigo, descricao, dataInsert);
         this.codigoFrota = codigoFrota;
-        this.placa = placa;
+        this.placaVeiculo = placa;
     }
 
     @Override
     public String toString() {
-        return "Veiculo [codigoFrota=" + codigoFrota +
-        ", placa=" + placa +
-        ", codigo=" + codigo +
-        ", descricao=" + descricao +
-        ", dataInsert" + dataInsert +
-        "]";
+        return "Veiculo [" +
+                "codigoFrota=" + codigoFrota +
+                ", placaVeiculo=" + placaVeiculo +
+                ", codigo=" + codigoFrota +
+                ", descricao=" + descricaoTransporte +
+                ", dataInsert" + dataInclusaoTransporte +
+                "]";
     }
 
     @Override

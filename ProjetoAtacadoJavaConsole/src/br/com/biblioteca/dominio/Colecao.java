@@ -33,12 +33,13 @@ public class Colecao extends BaseBiblioteca {
 
     @Override
     public String toString() {
-        return "Colecao [editora=" + editora +
-        ", livros=" + livros +
-        ", codigoBiblioteca=" + codigoBiblioteca +
-        ", descricaoBiblioteca=" + descricaoBiblioteca +
-        ", dataCadastroBiblioteca=" + dataCadastroBiblioteca +
-        "]";
+        return "Colecao [" +
+                "editora=" + editora +
+                ", livros=" + livros +
+                ", codigoBiblioteca=" + codigoBiblioteca +
+                ", descricaoBiblioteca=" + descricaoBiblioteca +
+                ", dataCadastroBiblioteca=" + dataCadastroBiblioteca +
+                "]";
     }
 
     @Override

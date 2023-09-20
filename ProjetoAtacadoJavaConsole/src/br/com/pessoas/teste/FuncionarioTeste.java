@@ -28,7 +28,7 @@ public class FuncionarioTeste extends BaseTeste<Funcionario> {
         Funcionario funcionario = new Funcionario(1, "Hamilton", "hmil@gmail.com", "não tem", LocalDate.now(), "12398764537", "454879", "M", "Pardo", "Brasileiro", "São Paulo", "Emanoel Freitas", "Gisele Bintin", "454687823", "hmiltom", "bgbgalsd123", LocalDate.now());
         Funcionario novoFuncionario = this.servico.Criar(funcionario);
         System.out.println(novoFuncionario.toString());
-        return novoFuncionario.getCodigoPessoa();
+        return novoFuncionario.getCodigo();
     }
     
     @Override
@@ -60,7 +60,7 @@ public class FuncionarioTeste extends BaseTeste<Funcionario> {
     protected void TestarExclusao(int chave) {
         System.out.println("Agora testando EXCLUSÃO: ");
         Funcionario alvo = this.servico.Ler(chave);
-        Funcionario excluido = this.servico.Deletar(alvo.getCodigoPessoa());
+        Funcionario excluido = this.servico.Deletar(alvo.getCodigo());
         System.out.println(excluido.toString());
     }
 }

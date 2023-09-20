@@ -44,13 +44,14 @@ public class Livro extends BaseBiblioteca {
 
     @Override
     public String toString() {
-        return "Livro [codigoISBN=" + codigoISBN +
-        ", codigoAutor=" + codigoLivro +
-        ", codigo=" + codigoBiblioteca +
-        ", titulo=" + tituloLivro +
-        ", descricao=" + descricaoBiblioteca +
-        ", dataCadastro=" + dataCadastroBiblioteca +
-        "]";
+        return "Livro [" +
+                "codigoISBN=" + codigoISBN +
+                ", codigoAutor=" + codigoLivro +
+                ", codigo=" + codigoBiblioteca +
+                ", titulo=" + tituloLivro +
+                ", descricao=" + descricaoBiblioteca +
+                ", dataCadastro=" + dataCadastroBiblioteca +
+                "]";
     }
 
     @Override

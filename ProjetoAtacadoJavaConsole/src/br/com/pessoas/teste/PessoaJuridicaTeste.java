@@ -28,7 +28,7 @@ public class PessoaJuridicaTeste extends BaseTeste<PessoaJuridica> {
         PessoaJuridica pessoaJuridica = new PessoaJuridica(1, "IpedStudios", "Iped@gmail.com.br", "www.ipedstudios.com.br", LocalDate.now(), "4578797564654687", "4579465", "45454", "Iped Studios");
         PessoaJuridica novo = this.servico.Criar(pessoaJuridica);
         System.out.println(novo.toString());
-        return novo.getCodigoPessoa();
+        return novo.getCodigo();
     }
     
     @Override
@@ -59,7 +59,7 @@ public class PessoaJuridicaTeste extends BaseTeste<PessoaJuridica> {
     protected void TestarExclusao(int chave) {
         System.out.println("Agora testando EXCLUSÃO: ");
         PessoaJuridica alvo = this.servico.Ler(chave);
-        PessoaJuridica excluido = this.servico.Deletar(alvo.getCodigoPessoa());
+        PessoaJuridica excluido = this.servico.Deletar(alvo.getCodigo());
         System.out.println(excluido.toString());
     }
 }

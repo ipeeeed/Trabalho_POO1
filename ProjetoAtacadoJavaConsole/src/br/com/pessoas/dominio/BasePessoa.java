@@ -4,49 +4,49 @@ import java.time.LocalDate;
 
 public abstract class BasePessoa {
     protected int codigoPessoa;
-    protected String nome;
-    protected String email;
-    protected String site;
-    protected LocalDate dataInclusao;
+    protected String nomePessoa;
+    protected String emailPessoa;
+    protected String sitePessoa;
+    protected LocalDate dataInclusaoPessoa;
 
-    public int getCodigoPessoa() {
+    public int getCodigo() {
         return codigoPessoa;
     }
 
-    public void setCodigoPessoa(int codigoPessoa) {
+    public void setCodigo(int codigoPessoa) {
         this.codigoPessoa = codigoPessoa;
     }
 
     public String getNome() {
-        return nome;
+        return nomePessoa;
     }
 
     public void setNome(String nome) {
-        this.nome = nome;
+        this.nomePessoa = nome;
     }
 
     public String getEmail() {
-        return email;
+        return emailPessoa;
     }
 
     public void setEmail(String email) {
-        this.email = email;
+        this.emailPessoa = email;
     }
 
     public String getSite() {
-        return site;
+        return sitePessoa;
     }
 
     public void setSite(String site) {
-        this.site = site;
+        this.sitePessoa = site;
     }
 
     public LocalDate getDataInclusao() {
-        return dataInclusao;
+        return dataInclusaoPessoa;
     }
 
     public void setDataInclusao(LocalDate dataInclusao) {
-        this.dataInclusao = dataInclusao;
+        this.dataInclusaoPessoa = dataInclusao;
     }
 
     public BasePessoa() {
@@ -54,10 +54,10 @@ public abstract class BasePessoa {
 
     public BasePessoa(int codigoPessoa, String nome, String email, String site, LocalDate dataInclusao) {
         this.codigoPessoa = codigoPessoa;
-        this.nome = nome;
-        this.email = email;
-        this.site = site;
-        this.dataInclusao = dataInclusao;
+        this.nomePessoa = nome;
+        this.emailPessoa = email;
+        this.sitePessoa = site;
+        this.dataInclusaoPessoa = dataInclusao;
     }
 
     public abstract void Imprimir();
